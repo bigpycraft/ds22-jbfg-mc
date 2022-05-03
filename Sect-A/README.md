@@ -6,7 +6,7 @@
 
 ## JB Financial Group
 
-<img src="./images/img_main_front.png">
+<img src="../images/img_main_front.png">
 
 ## Table of Contents
 - <b>Python Programming Basics</b>
