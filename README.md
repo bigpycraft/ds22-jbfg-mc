@@ -8,6 +8,8 @@
 
 <img src="./images/img_main_front.png">
 
+<hr>
+
 ## Notice 
 - [교육자료] : https://github.com/bigpycraft/ds22-jbfg-mc
 - [공유폴더] : \192.15.206.251\ds\jbfg
@@ -86,9 +88,9 @@
     </tr>
 </table>
 <br/>
-<hr>
 
 <hr>
+
 <marquee><font size=3 color='brown'>The BigpyCraft find the information to design valuable society with Technology & Craft.</font></marquee>
 <div align='right'><font size=2 color='gray'> &lt; The End &gt; </font></div>
 
