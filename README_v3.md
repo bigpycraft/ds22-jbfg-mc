@@ -32,6 +32,11 @@
 - Machine Learning
 - Deep Learning
 
+[Sect-A]: ./Sect-A/                  "Go Sect-A"
+[Sect-B]: ./Sect-B/                  "Go Sect-B"
+[Sect-C]: ./Sect-C/                  "Go Sect-C"
+[Sect-D]: ./Sect-D/                  "Go Sect-D"
+
 <hr>
 
 ## Python Develop Environment
