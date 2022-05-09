@@ -1,35 +1,36 @@
 
 # Data Science Course for JBFG, 2022
 
-<div align='right'><font size=2 color='gray'>Python For BigData @ <font color='blue'><a href='https://www.facebook.com/jskim.kr'>FB / jskim.kr</a></font>, [±èÁø¼ö](bigpycraft@gmail.com)</font></div>
+<div align='right'><font size=2 color='gray'>Python For BigData @ <font color='blue'><a href='https://www.facebook.com/jskim.kr'>FB / jskim.kr</a></font>, [ê¹€ì§„ìˆ˜](bigpycraft@gmail.com)</font></div>
 <br>
 
 ## JB Financial Group
 
 <img src="./images/img_main_front.png">
 
-<hr>
-
 ## Notice 
-- [±³À°ÀÚ·á] : https://github.com/bigpycraft/ds22-jbfg-mc
-- [°øÀ¯Æú´õ] : \192.15.206.251\ds\jbfg
+- [êµìœ¡ìë£Œ] : https://github.com/bigpycraft/ds22-jbfg-mc
+- [ê³µìœ í´ë”] : \192.15.206.251\ds\jbfg
 
 <hr>
 
 ##  DS Course Overview
-- ±³À°°úÁ¤ : µ¥ÀÌÅÍ ºĞ¼® °úÁ¤
-- ±³À°Àå¼Ò : ¸ÖÆ¼Ä·ÆÛ½º ¼±¸ªÄ·ÆÛ½º 304È£
-- ±³À°ÀÏÁ¤ : 2022.05.09(¿ù) ~ 06.24(±İ), ÃÑ33ÀÏ (6/1 Áö¹æ¼±°ÅÀÏ, 6/6 ÇöÃæÀÏ ÈŞ°­)
-- ±³À°½Ã°£ : 9:00am ~ 6:00pm, 264H 
-- ÄÚ·Î³ª È®ÁøÀÚ ¹ß»ı½Ã ´çÀÏ ºñ´ë¸éÀüÈ¯ (À½¼º È®ÀÎ½Ã ÀÍÀÏ ´ë¸é °¡´É),  ¡Å °³º° PC°¡ ÁØºñ°¡ µÇ¾î¾ß ÇÔ
+- êµìœ¡ê³¼ì • : ë°ì´í„° ë¶„ì„ ê³¼ì •
+- êµìœ¡ì¥ì†Œ : ë©€í‹°ìº í¼ìŠ¤ ì„ ë¦‰ìº í¼ìŠ¤ 304í˜¸
+- êµìœ¡ì¼ì • : 2022.05.09(ì›”) ~ 06.24(ê¸ˆ), ì´33ì¼ (6/1 ì§€ë°©ì„ ê±°ì¼, 6/6 í˜„ì¶©ì¼ íœ´ê°•)
+- êµìœ¡ì‹œê°„ : 9:00am ~ 6:00pm, 264H 
+- ì½”ë¡œë‚˜ í™•ì§„ì ë°œìƒì‹œ ë‹¹ì¼ ë¹„ëŒ€ë©´ì „í™˜ (ìŒì„± í™•ì¸ì‹œ ìµì¼ ëŒ€ë©´ ê°€ëŠ¥),  âˆ´ ê°œë³„ PCê°€ ì¤€ë¹„ê°€ ë˜ì–´ì•¼ í•¨
 
 <hr>
 
 ## Table of Contents
 - [Python Programming Basics][Sect-A]
-- [Jupyter Notebook Practice][Sect-B]
-- [Python Packages and Modules][Sect-C]
-- [Data Processing and Analysis][Sect-D]
+- Python Packages and Modules
+- Data Processing and Analysis
+- Web Cralwling
+- Natural Language Processing
+- Machine Learning
+- Deep Learning
 
 [Sect-A]: ./Sect-A/                  "Go Sect-A"
 [Sect-B]: ./Sect-B/                  "Go Sect-B"
@@ -40,7 +41,7 @@
 
 ## Python Develop Environment
 
-<h3> Python </h3>
+### Python
 
 <table align="left">
     <tr align="left">
@@ -63,9 +64,7 @@
 </table>
 <br/>
 
-<hr>
-
-<h3> PyCharm </h3>
+### PyCharm
 
 <table align="left">
     <tr align="left">
@@ -80,8 +79,6 @@
 <br/><br/>
 - Download : https://www.jetbrains.com/pycharm/download/
 <br/>
-- Version: 2022.1
-<br/>
 - Build: 221.5080.212
 <br/>
 - Release Date: 13 April, 2022
@@ -92,9 +89,7 @@
 </table>
 <br/>
 
-<hr>
-
-<h3> Jupyter Notebook </h3>
+### Jupyter Notebook
 
 <table align="left">
     <tr align="left">
@@ -131,10 +126,149 @@
 </table>
 <br/>
 
-<hr>
 
-<hr>
+### Selenium WebDriver 
+
+<table align="left">
+    <tr align="left">
+        <td width="200">
+            <a href="https://www.seleniumhq.org/projects/webdriver/">
+            <img src="./images/SeleniumHQ-logo.png" width="150" />
+            </a>
+        </td>
+        <td width="800">
+<div align="left">
+    <b> - Selenium HQ </b> : https://www.seleniumhq.org/projects/webdriver/
+    <br/><br/> - ì•„ë˜ ì‚¬ì´íŠ¸ì—ì„œ OSì— ë§ëŠ” ì›¹ë“œë¼ì´ë¸Œë¥¼ ë‹¤ìš´ë°›ì•„ ì••ì¶•ì„ í’€ì–´ driver í´ë”ì— ë³µì‚¬
+    <br/><br/>
+    <b> 1. Chrome WebDriver </b> &nbsp;&nbsp; : <a href='http://chromedriver.chromium.org/downloads'>[ë‹¤ìš´ë¡œë“œ1]</a>, &nbsp;&nbsp;&nbsp;<a href='https://sites.google.com/a/chromium.org/chromedriver/downloads'>[ë‹¤ìš´ë¡œë“œ2]</a>
+    <br/><br/>
+    <b> 2. Firefox WebDriver </b> &nbsp;&nbsp;&nbsp;&nbsp; : <a href='https://github.com/mozilla/geckodriver/releases'>[ë‹¤ìš´ë¡œë“œ]</a>
+    <br/><br/>
+    <b> 3. Microsoft WebDriver </b> : <a href='https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/'>[ë‹¤ìš´ë¡œë“œ]</a>
+    <br/><br/>
+    <b> cf. ê°€ì¥ ë³´í¸ì ìœ¼ë¡œ ë§ì´ ì‚¬ìš©í•˜ëŠ” í¬ë¡¬ ì›¹ë“œë¼ì´ë¸Œë¥¼ ë‹¤ìš´ë°›ì•„ì„œ ì„¤ì¹˜í•œë‹¤. </b>
+</div>
+        </td>
+    </tr>
+</table>
+<br/>
+
+
+### Selenium 1.0 + WebDriver = Selenium 2.0
+- HomeSite : https://www.seleniumhq.org/projects/webdriver/
+- WebDriver is designed in a simpler and more concise programming interface along with addressing some limitations in the Selenium-RC API.
+- WebDriver is a compact Object Oriented API when compared to Selenium1.0
+- It drives the browser much more effectively and overcomes the limitations of Selenium 1.x which affected our functional test coverage, like the file upload or download, pop-ups and dialogs barrier
+- WebDriver overcomes the limitation of Selenium RC's Single Host origin policy
+
+
+### KoNLPy Install Guide  
+
+<table align="left">
+    <tr align="left">
+        <td width="200">
+            <a href="http://konlpy.org/ko/v0.5.0/install/">
+            <img src="./images/konlpy.png" width="150" />
+            </a>
+        </td>
+        <td width="800">
+<div align="left">
+    <b> 1. JAVA í™˜ê²½ </b> : <a href="https://www.oracle.com/technetwork/java/javase/downloads/">JDK (>=1.8)</a> Install & JAVA Environmnmet Variable Setting
+    <br/><br/>
+    <b> 2. MS Visual C++ ì„¤ì¹˜ </b> : <a href="https://www.scivision.co/python-windows-visual-c++-14-required/">Build Tools for Visual Studio 2017 (>=14.0) </a> Install 
+    <br/><br/>
+    <b> 3. JPype ì„¤ì¹˜ </b> : <a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/#jpype">JPype1  (>=0.5.7) </a>Install
+    <br/> &nbsp;&nbsp; (Anaconda Prompt) C:\Users\user> <b> pip install --upgrade pip </b>
+    <br/> &nbsp;&nbsp; (Anaconda Prompt) C:\Users\user> <b> pip install JPype1â€‘0.6.3â€‘cp36â€‘cp36mâ€‘win_amd64.whl </b>
+    <br/><br/>
+    <b> 4. KoNLPy ì„¤ì¹˜ </b> :
+    <br/> &nbsp;&nbsp; (Anaconda Prompt) C:\Users\user> <b> pip install konlpy </b>
+</div>
+        </td>
+    </tr>
+</table>
+<br/>
+
+
+### JDK Install & JAVA Environment Setting
+
+<table align="left">
+    <tr align="left">
+        <td width="200">
+            <a href="https://www.oracle.com/technetwork/java/javase/downloads/">
+            <img src="./images/java-se-downloads-1612441.gif" width="150" />
+            </a>
+        </td>
+        <td width="800">
+<div align="left"> 
+    <b> - Download </b> : https://www.oracle.com/technetwork/java/javase/downloads/
+    <br/><br/> 
+    <b> - ì‹œìŠ¤í…œ í™˜ê²½ë³€ìˆ˜ </b>
+    <br/><br/> 
+    <b> 1. JAVA_HOME </b> = C:\Java\jdk1.8.0
+    <br/><br/> 
+    <b> 2. Path </b> = %Path%; %JAVA_HOME%\bin
+    <br/><br/>
+    <b> 3. CLASSPATH </b> = .; %JAVA_HOME%\lib;
+</div>
+        </td>
+    </tr>
+</table>
+
+
+### TensorFlow
+
+<table align="left">
+    <tr align="left">
+        <td width="200">
+            <a href="https://www.tensorflow.org/">
+            <img src="./images/TensorFlow_logo2.png" width="150" />
+            </a>
+        </td>
+        <td width="800">
+<div align="left">
+    <b> - TensorFlow.org </b> : https://www.tensorflow.org/
+    <br/><br/> - An open source machine learning library for research and production.
+    <br/><br/>
+    <b> 1. TenforFlow Install  : <a href='https://www.tensorflow.org/install/'>[ì„¤ì¹˜ê°€ì´ë“œ]</a>
+    <br/><br/>
+    <b> 2. TenforFlow Develop : <a href='https://www.tensorflow.org/tutorials/'>[íŠœí† ë¦¬ì–¼]</a>
+    <br/><br/>
+    <b> 3. TensorFlow Community </b> : <a href='https://www.tensorflow.org/community/'>[ì»¤ë®¤ë‹ˆí‹°]</a>
+    <br/><br/>
+    <b> cf. Environment : Install a Python 3.6.x or Python 3.7.x 64-bit release for Windows </b>
+</div>
+        </td>
+    </tr>
+</table>
+<br/>
+
+
+### Microsoft Azuer Notebooks
+
+<table align="left">
+    <tr align="left">
+        <td width="200">
+            <a href="https://notebooks.azure.com/">
+            <img src="./images/microsoft.jpg" width="100" />
+            </a>
+        </td>
+        <td width="800">
+<div align="left">
+- <b> Microsoft Azure Notebooks </b> : https://notebooks.azure.com/
+<br/><br/>
+- Interactive coding in my browser
+<br/><br/>
+- Free, in the cloud, powered by jupyter
+</div></td>
+    </tr>
+</table>
+<br/>
+<br/>
+<br/>
+
+
 
 <marquee><font size=3 color='brown'>The BigpyCraft find the information to design valuable society with Technology & Craft.</font></marquee>
 <div align='right'><font size=2 color='gray'> &lt; The End &gt; </font></div>
-
