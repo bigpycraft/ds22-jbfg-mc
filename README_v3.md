@@ -27,6 +27,9 @@
 
 ## Table of Contents
 - [Python Programming Basics][Sect-A]
+- [Jupyter Notebook Practice][Sect-B]
+- [Python Packages and Modules][Sect-C]
+- [Data Processing and Analysis][Sect-D]
 
 [Sect-A]: ./Sect-A/                  "Go Sect-A"
 [Sect-B]: ./Sect-B/                  "Go Sect-B"
@@ -36,6 +39,8 @@
 <hr>
 
 ## Python Develop Environment
+
+<hr>
 
 <h3> Python </h3>
 
@@ -48,7 +53,7 @@
         </td>
         <td width="800">
 <div align="left">
-<b> Latest: Python 3.10.4 - March 24, 2022</b>
+<b> Latest: Python 3.9.5 - May 3, 2021</b>
 <br/><br/>
 - Download : https://www.python.org/downloads/windows/
 <br/>
@@ -59,6 +64,7 @@
     </tr>
 </table>
 <br/>
+
 
 <hr>
 
@@ -73,21 +79,23 @@
         </td>
         <td width="800">
 <div align="left">
-<b> Latest : Python 3.10 version</b>
+<b> Latest : Python 3.9 version</b>
 <br/><br/>
 - Download : https://www.jetbrains.com/pycharm/download/
 <br/>
-- Build: 221.5080.212
+- Version: 2021.1.1
 <br/>
-- Release Date: 13 April, 2022
+- Build: 211.7142.13
+<br/>
+- Release Date: 22 April, 2021
 <br/>
 - Download Community Version 
 </div></td>
     </tr>
 </table>
 <br/>
-
 <hr>
+
 
 <h3> Jupyter Notebook </h3>
 
@@ -125,9 +133,9 @@
     </tr>
 </table>
 <br/>
-
 <hr>
 
+<hr>
 <marquee><font size=3 color='brown'>The BigpyCraft find the information to design valuable society with Technology & Craft.</font></marquee>
 <div align='right'><font size=2 color='gray'> &lt; The End &gt; </font></div>
 
