@@ -96,8 +96,8 @@
     </tr>
 </table>
 <br/>
-<hr>
 
+<hr>
 
 <h3> Jupyter Notebook </h3>
 
@@ -109,6 +109,7 @@
             </a>
         </td>
         <td width="800">
+
 <div align="left">
 <b> Latest : Version 2021.11 | Release Date: November 17, 2021 </b>
 <br/>
@@ -131,9 +132,12 @@
 - Reason : TF Requires Python 3.4, 3.5, or 3.6 
 <br/>
 - TensorFlow : https://www.tensorflow.org/install/pip
-</div></td>
+</div>
+
+        </td>
     </tr>
 </table>
+
 <br/>
 
 <hr>
