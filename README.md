@@ -93,11 +93,11 @@
         </td>
         <td width="800">
 <div align="left">
-<b> Latest : Version 2021.05 | Release Date: MAY 20, 2021 </b>
+<b> Latest : Version 2021.11 | Release Date: November 17, 2021 </b>
 <br/>
-- Python 3.8 version
+- Python 3.9 version
 <br/>
-- Filename : Anaconda3-2021.05-Windows-x86_64.exe
+- Filename : Anaconda3-2021.11-Windows-x86_64.exe
 <br/>
 - Download : https://www.anaconda.com/distribution/
 <br/>
@@ -109,7 +109,7 @@
 <br/>
 - Filename : Anaconda3-5.2.0-Windows-x86_64.exe
 <br/>
-- Download : https://repo.continuum.io/archive/ 
+- Download : https://repo.anaconda.com/archive/
 <br/>
 - Reason : TF Requires Python 3.4, 3.5, or 3.6 
 <br/>
