@@ -67,7 +67,6 @@
 </table>
 <br/>
 
-
 <hr>
 
 <h3> PyCharm </h3>
@@ -109,7 +108,6 @@
             </a>
         </td>
         <td width="800">
-
 <div align="left">
 <b> Latest : Version 2021.11 | Release Date: November 17, 2021 </b>
 <br/>
@@ -122,6 +120,7 @@
 - Check the OS version & bit (32bit / 64bit)
 </div>
 <br/>
+<!--
 <div align="left">
 <b> Recommand Previous: Version 5.2 | Release Date: May 30, 2018 </b>
 <br/>
@@ -133,7 +132,7 @@
 <br/>
 - TensorFlow : https://www.tensorflow.org/install/pip
 </div>
-
+-->
         </td>
     </tr>
 </table>
