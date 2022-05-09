@@ -42,8 +42,6 @@
 
 ## Python Develop Environment
 
-<hr>
-
 <h3> Python </h3>
 
 <table align="left">
