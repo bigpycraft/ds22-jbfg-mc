@@ -41,9 +41,7 @@
 
 ## Python Develop Environment
 
-<hr>
-
-<h3> Python </h3>
+### Python
 
 <table align="left">
     <tr align="left">
@@ -66,9 +64,7 @@
 </table>
 <br/>
 
-<hr>
-
-<h3> PyCharm </h3>
+### PyCharm
 
 <table align="left">
     <tr align="left">
@@ -93,9 +89,7 @@
 </table>
 <br/>
 
-<hr>
-
-<h3> Jupyter Notebook </h3>
+### Jupyter Notebook
 
 <table align="left">
     <tr align="left">
@@ -132,7 +126,6 @@
 </table>
 <br/>
 
-<hr>
 
 ### Selenium WebDriver 
 
@@ -169,7 +162,6 @@
 - It drives the browser much more effectively and overcomes the limitations of Selenium 1.x which affected our functional test coverage, like the file upload or download, pop-ups and dialogs barrier
 - WebDriver overcomes the limitation of Selenium RC's Single Host origin policy
 
-<hr> 
 
 ### KoNLPy Install Guide  
 
@@ -199,8 +191,6 @@
 <br/>
 
 
-<hr>
-
 ### JDK Install & JAVA Environment Setting
 
 <table align="left">
@@ -226,8 +216,6 @@
     </tr>
 </table>
 
-
-<hr>
 
 ### TensorFlow
 
@@ -257,8 +245,6 @@
 <br/>
 
 
-<hr>
-
 ### Microsoft Azuer Notebooks
 
 <table align="left">
@@ -279,8 +265,10 @@
     </tr>
 </table>
 <br/>
+<br/>
+<br/>
 
 
-<hr>
+
 <marquee><font size=3 color='brown'>The BigpyCraft find the information to design valuable society with Technology & Craft.</font></marquee>
 <div align='right'><font size=2 color='gray'> &lt; The End &gt; </font></div>
