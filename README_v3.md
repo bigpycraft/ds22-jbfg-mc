@@ -27,9 +27,6 @@
 
 ## Table of Contents
 - [Python Programming Basics][Sect-A]
-- [Jupyter Notebook Practice][Sect-B]
-- [Python Packages and Modules][Sect-C]
-- [Data Processing and Analysis][Sect-D]
 
 [Sect-A]: ./Sect-A/                  "Go Sect-A"
 [Sect-B]: ./Sect-B/                  "Go Sect-B"
@@ -80,13 +77,50 @@
 <br/><br/>
 - Download : https://www.jetbrains.com/pycharm/download/
 <br/>
-- Version: 2022.1
-<br/>
 - Build: 221.5080.212
 <br/>
 - Release Date: 13 April, 2022
 <br/>
 - Download Community Version 
+</div></td>
+    </tr>
+</table>
+<br/>
+
+<hr>
+
+<h3> Jupyter Notebook </h3>
+
+<table align="left">
+    <tr align="left">
+        <td width="200">
+            <a href="https://www.anaconda.com/distribution/">
+            <img src="./images/jupyter.jpg" width="150" />
+            </a>
+        </td>
+        <td width="800">
+<div align="left">
+<b> Latest : Version 2021.05 | Release Date: MAY 20, 2021 </b>
+<br/>
+- Python 3.8 version
+<br/>
+- Filename : Anaconda3-2021.05-Windows-x86_64.exe
+<br/>
+- Download : https://www.anaconda.com/distribution/
+<br/>
+- Check the OS version & bit (32bit / 64bit)
+</div>
+<br/>
+<div align="left">
+<b> Recommand Previous: Version 5.2 | Release Date: May 30, 2018 </b>
+<br/>
+- Filename : Anaconda3-5.2.0-Windows-x86_64.exe
+<br/>
+- Download : https://repo.continuum.io/archive/ 
+<br/>
+- Reason : TF Requires Python 3.4, 3.5, or 3.6 
+<br/>
+- TensorFlow : https://www.tensorflow.org/install/pip
 </div></td>
     </tr>
 </table>
