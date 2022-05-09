@@ -24,6 +24,7 @@
 - [[강의자료]][pyt-06]  [[소스코드]][code-06]  - P06.제어문
 
 <hr>
+
 ## Practice
 
 - [[과제1]][prac-01] - 모양그리기
@@ -100,7 +101,6 @@
 
 
 <!--
-
 
 ## Python Programming Basics
 
