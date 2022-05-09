@@ -84,7 +84,7 @@
 <br/><br/>
 - Download : https://www.jetbrains.com/pycharm/download/
 <br/>
-- Version: 2022.1.1
+- Version: 2022.1
 <br/>
 - Build: 221.5080.212
 <br/>
@@ -98,6 +98,7 @@
 
 <hr>
 
+
 <h3> Jupyter Notebook </h3>
 
 <table align="left">
@@ -109,18 +110,17 @@
         </td>
         <td width="800">
 <div align="left">
-<b> Latest : Version 2021.11 | Release Date: November 17, 2021 </b>
+<b> Latest : Version 2021.05 | Release Date: MAY 20, 2021 </b>
 <br/>
-- Python 3.9 version
+- Python 3.8 version
 <br/>
-- Filename : Anaconda3-2021.11-Windows-x86_64.exe
+- Filename : Anaconda3-2021.05-Windows-x86_64.exe
 <br/>
 - Download : https://www.anaconda.com/distribution/
 <br/>
 - Check the OS version & bit (32bit / 64bit)
 </div>
 <br/>
-<!--
 <div align="left">
 <b> Recommand Previous: Version 5.2 | Release Date: May 30, 2018 </b>
 <br/>
@@ -131,18 +131,13 @@
 - Reason : TF Requires Python 3.4, 3.5, or 3.6 
 <br/>
 - TensorFlow : https://www.tensorflow.org/install/pip
-</div>
--->
-        </td>
+</div></td>
     </tr>
 </table>
-
 <br/>
-
 <hr>
 
-<h3>  </h3>
-
+<hr>
 <marquee><font size=3 color='brown'>The BigpyCraft find the information to design valuable society with Technology & Craft.</font></marquee>
 <div align='right'><font size=2 color='gray'> &lt; The End &gt; </font></div>
 

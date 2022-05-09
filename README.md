@@ -77,8 +77,6 @@
 <br/><br/>
 - Download : https://www.jetbrains.com/pycharm/download/
 <br/>
-- Version: 2022.1.1
-<br/>
 - Build: 221.5080.212
 <br/>
 - Release Date: 13 April, 2022
@@ -91,7 +89,7 @@
 
 <hr>
 
-<h3>  </h3>
+<h3> &nbsp; </h3>
 
 <marquee><font size=3 color='brown'>The BigpyCraft find the information to design valuable society with Technology & Craft.</font></marquee>
 <div align='right'><font size=2 color='gray'> &lt; The End &gt; </font></div>
