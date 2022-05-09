@@ -54,6 +54,7 @@
     </tr>
 </table>
 <br/>
+<br/>
 
 ### PyCharm
 
@@ -78,6 +79,7 @@
 </div></td>
     </tr>
 </table>
+<br/>
 <br/>
 
 ### Jupyter Notebook
@@ -116,7 +118,7 @@
     </tr>
 </table>
 <br/>
-
+<br/>
 
 ### Selenium WebDriver 
 
