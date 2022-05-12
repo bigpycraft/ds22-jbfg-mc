@@ -53,6 +53,7 @@
 [pyt-07]: ./docu/P07.실습프로젝트.pdf                          "Go Pyt-07"
 [pyt-071]:./docu/P07.실습프로젝트1.pdf                         "Go Pyt-071"
 [pyt-072]:./docu/P07.실습프로젝트2_code.pdf                    "Go Pyt-072"
+[pyt-073]:./docu/P07.실습프로젝트3.pdf                         "Go Pyt-073"
 [pyt-08]: ./docu/P08.함수.pdf                                  "Go Pyt-08"
 [pyt-09]: ./docu/P09.클래스.pdf                                "Go Pyt-09"
 [pyt-10]: ./docu/P10.모듈&패키지.pdf                           "Go Pyt-10"
