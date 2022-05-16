@@ -48,9 +48,9 @@
 
 ## Team Project
 
-- [[팀과제1]][tproj-01] - 야구 게임 (3자리 숫자맞히기)
-- [[팀과제2]][tproj-02] - 가위바위보 게임
-- [[팀과제3]][tproj-03] - 묵찌빠 게임 (class 구현)
+- [[팀과제1]][tproj-01] [[소스코드]][sample-01] - 야구 게임 (3자리 숫자맞히기)
+- [[팀과제2]][tproj-02] [[소스코드]][sample-02] - 가위바위보 게임
+- [[팀과제3]][tproj-03] [[소스코드]][sample-03] - 묵찌빠 게임 (class 구현)
 
 
 [pyt-00]: ./docu/P00.파이썬코딩_교육과정.pdf                   "Go Pyt-00"
@@ -116,7 +116,15 @@
 [quiz-08]: ./practice/QUIZ08_도서목록관리_클래스.md            "Go QUIZ08"
 
 
-- [[실습9]][prac-09] - 묵찌빠게임_클래스
+[tproj-01]: ./teamproj/p06_func_game_baseball.md               "Go tproj-01"
+[tproj-02]: ./teamproj/p06_func_game_RPS.md                    "Go tproj-02"
+[tproj-03]: ./teamproj/p07_oop_game_MZP.md                     "Go tproj-03"
+
+[sample-01]: ./teamproj/samples/s06_func_game_baseball.py      "Go sample-01"
+[sample-02]: ./teamproj/samples/s06_func_game_RPS.py           "Go sample-02"
+[sample-03]: ./teamproj/samples/s07_oop_game_MZP.py            "Go sample-03"
+
+
 
 <hr>
 <marquee><font size=3 color='brown'>The BigpyCraft find the information to design valuable society with Technology & Craft.</font></marquee>
