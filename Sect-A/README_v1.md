@@ -28,7 +28,7 @@
 - [[강의자료]][pyt-10]  [[소스코드]][code-10]  - P10.모듈&패키지
 - [[강의자료]][pyt-11]  [소스코드]  - P11.정규식
 - [[강의자료]][pyt-12]  [소스코드]  - P12.입출력&로깅
-- [[강의자료]][pyt-13]  [소스코드]  - P13.에러&예외처리
+- [[강의자료]][pyt-13]  [[소스코드]][code-13]  - P13.에러&예외처리
 - [강의자료] [[소스코드]][code-14]  - P14.OS 모듈
 - [강의자료] [[소스코드]][code-15]  - P15.JSON 핸들링
 
@@ -89,6 +89,7 @@
 [code-12]: ./code/PYT_SECT12_rc1.md                            "Go Code-12"
 [code-13]: ./code/PYT_SECT13_rc1.md                            "Go Code-13"
 [code-14]: ./code/PYT_SECT14_rc1.md                            "Go Code-14"
+[code-15]: ./code/PYT_SECT15_rc1.md                            "Go Code-15"
 
 
 [prac-01]: ./practice/실습1_모양그리기.pdf                     "Go 실습-01"
