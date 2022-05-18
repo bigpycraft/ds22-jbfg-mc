@@ -52,6 +52,7 @@
 - [[팀과제1]][tproj-01] [[소스코드]][sample-01] - 야구 게임 (3자리 숫자맞히기)
 - [[팀과제2]][tproj-02] [소스코드] - 가위바위보 게임
 - [[팀과제3]][tproj-03] [[소스코드]][sample-03] - 묵찌빠 게임 (class 구현)
+- [[팀과제4]][tproj-04] [[작성양식]][tproj-041] - 골프스코어 관리자
 
 
 [pyt-00]: ./docu/P00.파이썬코딩_교육과정.pdf                   "Go Pyt-00"
@@ -122,6 +123,8 @@
 [tproj-01]: ./teamproj/p06_func_game_baseball.md               "Go tproj-01"
 [tproj-02]: ./teamproj/p06_func_game_RPS.md                    "Go tproj-02"
 [tproj-03]: ./teamproj/p07_oop_game_MZP.md                     "Go tproj-03"
+[tproj-04]: ./teamproj/p08_pkg_golf_score.md                   "Go tproj-04"
+[tproj-041]: ./teamproj/golf_score_board.xlsx                  "Go tproj-041"
 
 [sample-01]: ./teamproj/samples/s06_func_game_baseball.py      "Go sample-01"
 [sample-02]: ./teamproj/samples/s06_func_game_RPS.py           "Go sample-02"
