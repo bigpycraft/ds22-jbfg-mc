@@ -82,11 +82,6 @@ def do_something():
 
 ```
 
-INFO:root:메인함수 시작
-INFO:root:Doing something
-INFO:root:메인함수 종료
-
-
 
 ### 로깅(Logging) 예제4
 
