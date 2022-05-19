@@ -10,11 +10,6 @@
 - 문자열에서 특정 문자 조합을 찾기 위한 패턴
 
 
-### Regular Expression 관련 사이트
-- Text 정보를 re로 테스트 : https://regexr.com/
-- re를 다이어그램으로 표현 : https://regexper.com/
-
-
 
 ### RegEx 예제
 
@@ -176,6 +171,13 @@ phone_no = pattern.findall(text)
 print(phone_no)
 
 ```
+
+
+
+
+### Regular Expression 관련 사이트
+- Text 정보를 re로 테스트 : https://regexr.com/
+- re를 다이어그램으로 표현 : https://regexper.com/
 
 
 <hr>
