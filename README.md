@@ -6,7 +6,7 @@
 
 ## JB Financial Group
 
-<img src="./images/img_main_front.png">
+<img src="./images/img_main_top.png">
 
 ## Notice 
 - [교육자료] : https://github.com/bigpycraft/ds22-jbfg-mc
