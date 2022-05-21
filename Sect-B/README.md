@@ -8,8 +8,8 @@
 <img src="../images/img_main_front.png">
 
 ## Practical Data Analysis Based on Python
-- <b>Python Programming Review</b>
-- Python Packages and Modules
+- <b>Jupyter Notebook Practice</b>
+- Python Packages for Data Science
 - Data Processing and Analysis
 - Web Cralwling
 - Natural Language Processing
