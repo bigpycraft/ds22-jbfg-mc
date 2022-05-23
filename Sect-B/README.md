@@ -57,8 +57,6 @@
 [A2040]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_A204_Algorithm_Practice_Lv3_Queue-SCode.html        "Go A2040"
 
 
-test
-
 <hr>
 <marquee><font size=3 color='brown'>The BigpyCraft find the information to design valuable society with Technology & Craft.</font></marquee>
 <div align='right'><font size=2 color='gray'> &lt; The End &gt; </font></div>
