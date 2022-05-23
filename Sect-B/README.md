@@ -28,10 +28,12 @@
 
 
 
-## Python Algorithm Practice
+## Python Algorithm Quiz
 
-- 2-1. [Algirithm : Module                           ][A2010]
-- 2-2. [Algirithm : Data Structure                   ][A2020]
+- 2-1. [Algirithm : Guess Weekdays                   ][A2010]
+- 2-2. [Algirithm : Fibonacci Function               ][Q2020]
+- 2-3. [Algirithm : Data Structure - Stack Object    ][Q2030]
+- 2-4. [Algirithm : Data Structure - Queue Object    ][Q2040]
 
 
 [A1010]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_A101_Review_DataType.html                      "Go A1010"
@@ -43,10 +45,19 @@
 [A1052]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_A105_Review_Class2_OOP.html                    "Go A1052"
 [A1060]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_A106_Exceptions.html                           "Go A1060"
 
-[A2010]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_A201_Python_Algorithm_모듈.html                 "Go A2010"
-[A2020]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_A202_Python_Algorithm_자료구조_v1.html          "Go A2020"
+[A2010]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_A201_Algorithm_Practice_Lv1_Guess_Weekdays.html     "Go A2010"
+
+[Q2020]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_A202_Algorithm_Practice_Lv2_Fibonacci-Quiz.html     "Go Q2020"
+[A2020]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_A202_Algorithm_Practice_Lv2_Fibonacci-SCode.html    "Go A2020"
+
+[Q2030]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_A203_Algorithm_Practice_Lv3_Stack-Quiz.html         "Go Q2030"
+[A2030]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_A203_Algorithm_Practice_Lv3_Stack-SCode.html        "Go A2030"
+
+[Q2040]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_A204_Algorithm_Practice_Lv3_Queue-Quiz.html         "Go Q2040"
+[A2040]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_A204_Algorithm_Practice_Lv3_Queue-SCode.html        "Go A2040"
 
 
+test
 
 <hr>
 <marquee><font size=3 color='brown'>The BigpyCraft find the information to design valuable society with Technology & Craft.</font></marquee>
