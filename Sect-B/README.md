@@ -30,10 +30,10 @@
 
 ## Python Algorithm Quiz
 
-- 2-1. [Algirithm : Guess Weekdays                   ][A2010]
-- 2-2. [Algirithm : Fibonacci Function               ][Q2020]
-- 2-3. [Algirithm : Data Structure - Stack Object    ][Q2030]
-- 2-4. [Algirithm : Data Structure - Queue Object    ][Q2040]
+- 2-1. [Algorithm : Guess Weekdays                   ][A2010]
+- 2-2. [Algorithm : Fibonacci Function               ][Q2020]
+- 2-3. [Algorithm : Data Structure - Stack Object    ][Q2030]
+- 2-4. [Algorithm : Data Structure - Queue Object    ][Q2040]
 
 
 [A1010]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_A101_Review_DataType.html                      "Go A1010"
