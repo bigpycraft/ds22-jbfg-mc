@@ -24,10 +24,10 @@
 <hr>
 
 ## Table of Contents
-- [Python Programming Basics  ][Sect-A]
-- [Jupyter Notebook Practice  ][Sect-B]
-- [Python Packages and Modules][Sect-C]
-- [Essential Packages for DS  ][Sect-D]
+- [Python Programming Basics             ][Sect-A]
+- [Jupyter Notebook Practice             ][Sect-B]
+- [Python Packages and Modules           ][Sect-C]
+- [Essential Packages for Data Analysis  ][Sect-D]
 
 [Sect-A]: ./Sect-A/                  "Go Sect-A"
 [Sect-B]: ./Sect-B/                  "Go Sect-B"
