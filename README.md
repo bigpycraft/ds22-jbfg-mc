@@ -24,8 +24,9 @@
 <hr>
 
 ## Table of Contents
-- [Python Programming Basics][Sect-A]
-- [Jupyter Notebook Practice][Sect-B]
+- [Python Programming Basics  ][Sect-A]
+- [Jupyter Notebook Practice  ][Sect-B]
+- [Python Packages and Modules][Sect-C]
 
 [Sect-A]: ./Sect-A/                  "Go Sect-A"
 [Sect-B]: ./Sect-B/                  "Go Sect-B"
