@@ -30,6 +30,11 @@
 - 3-3. [Module Create & Call       ][A3030]
 - 3-4. [Built-in Module            ][A3040]
 - 3-5. [Date & Time Module         ][Q3050]
+- 3-6. [Python Iterator            ][A3060]
+- 3-7. [Python Generator           ][A3070]
+- 3-8. [Map, Filter, Reduce        ][A3100]
+- 3-9. JSON Handling  
+- 3-10. [Regular Expression         ][A3303]
 
 <!--
 - 3-1. [File I/O                   ][A3010]
@@ -37,9 +42,11 @@
 - 3-3. [Module Create & Call       ][A3030]
 - 3-4. [Built-in Module            ][A3040]
 - 3-5. [Date & Time Module         ][Q3050]
-- 3-6. [Map, Filter, Reduce        ][A3100]
-- 3-7. [JSON Handling              ][A3200]
-- 3-8. [Regular Expression         ][Q3300]
+- 3-6. [Python Iterator            ][Q3060]
+- 3-7. [Python Generator           ][Q3070]
+- 3-8. [Map, Filter, Reduce        ][A3100]
+- 3-9. [JSON Handling              ][A3200]
+- 3-10. [Regular Expression         ][A3302]
 -->
 
 
@@ -71,11 +78,15 @@
 [A3040]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_A304_Builtin_Module.html                   "Go A3040"
 [Q3050]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_A305_DateTIme_ver3-Quiz.html               "Go Q3050"
 [A3050]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_A305_DateTIme_ver3.html                    "Go A3050"
+
+[A3060]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_A306_Iterators.html                    "Go A3060"
+[A3070]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_A307_Generator.html                    "Go A3070"
 [A3100]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_A310_MFR-Quiz.html                         "Go A3100"
 [A3110]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_A311_MFR_SCode.html                        "Go A3110"
 [A3200]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_A320_JSON.html                             "Go A3200"
 [Q3300]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_A330_RegEx.html                            "Go Q3300"
-[A3300]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_A330_RegEx_ver2.html                       "Go A3300"
+[A3302]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_A330_RegEx_ver2.html                       "Go A3302"
+[A3303]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_A331_RegEx_ver3.html                       "Go A3303"
 
 
 
