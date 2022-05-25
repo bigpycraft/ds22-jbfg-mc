@@ -19,57 +19,17 @@
 
 ## Essential Packages for Data Analysis
 
-#### 4. Numpy 
-
-> 4-1. Numpy Basics 
-> - [ 1) NumPy ndarray, Slicing & Indexing       ][B4110]
-> - [ 2) Universal Functions, Data processing    ][B4120]
-> - [ 3) File input and output with arrays       ][B4130]
-> 
-> 4-2. Numpy Practice 
-> - [ 1) Basic Operation, Shape Manipulation     ][B4150]
-> - [ 2) Advanced indexing and index tricks      ][B4160]
+- 4  Numpy 
+- 4-1. [Numpy : Slicing & Indexing               ][B4010]
+- 4-2. [Numpy : Universal Functions              ][B4020]
 
 
 <!--
-> 4-1. Numpy Basics 
-> <br/> (1) [ NumPy ndarray, Slicing & Indexing       ][B4110]
-> <br/> (2) [ Universal Functions, Data processing    ][B4120]
-> <br/> (3) [ File input and output with arrays       ][B4130]
-> 
-> 4-2. Numpy Practice 
-> <br/> (1) [ Basic Operation, Shape Manipulation     ][B4150]
-> <br/> (2) [ Advanced indexing and index tricks      ][B4160]
-
------------------------------------------------------------------------
-
-> 4-1. Numpy Basics 
-> - [ 1) NumPy ndarray, Slicing & Indexing       ][B4110]
-> - [ 2) Universal Functions, Data processing    ][B4120]
-> - [ 3) File input and output with arrays       ][B4130]
-> 
-> 4-2. Numpy Practice 
-> - [ 1) Basic Operation, Shape Manipulation     ][B4150]
-> - [ 2) Advanced indexing and index tricks      ][B4160]
-
------------------------------------------------------------------------
-
-- 4    [Numpy Basics  : Slicing & Indexing                      ][B4100]
-- 4-1. [Numpy Basics1 : NumPy ndarray, Slicing & Indexing       ][B4110]
-- 4-2. [Numpy Basics2 : Universal Functions, Data processing    ][B4120]
-- 4-3. [Numpy Basics3 : File input and output with arrays       ][B4130]
-- 4-4. [Numpy Practice1 : Basic Operation, Shape Manipulation   ][B4150]
-- 4-5. [Numpy Practice2 : Advanced indexing and index tricks    ][B4160]
-
+- 4  Numpy 
+- 4-1. [Numpy : Slicing & Indexing               ][B4010]
+- 4-2. [Numpy : Universal Functions              ][B4020]
 -->
 
-
-[B4100]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B410_NumPy.html                       "Go B4010"
-[B4110]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B411_NumPy_Basics1.html               "Go B4110"
-[B4120]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B412_NumPy_Basics2.html               "Go B4120"
-[B4130]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B413_NumPy_Basics3.html               "Go B4130"
-[B4150]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B415_NumPy_Practice1.html             "Go B4150"
-[B4160]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B416_NumPy_Practice2.html             "Go B4160"
 
 
 [A1010]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_A101_Review_DataType.html                      "Go A1010"
@@ -110,6 +70,9 @@
 [A3303]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_A331_RegEx_ver3.html                       "Go A3303"
 
 
+
+[B4010]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B411_NumPy.html                       "Go B4010"
+[B4020]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B412_NumPy.html                       "Go B4020"
 
 <hr>
 <marquee><font size=3 color='brown'>The BigpyCraft find the information to design valuable society with Technology & Craft.</font></marquee>
