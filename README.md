@@ -11,6 +11,8 @@
 ## Notice 
 - [교육자료] : https://github.com/bigpycraft/ds22-jbfg-mc
 - [공유폴더] : \192.15.206.251\ds\jbfg
+- [PY-NEWS] : HTML에서 동작하는 Python 등장!!! [![youtube](images/youtube.png)](https://www.youtube.com/watch?v=EZL-jobhKfo) 
+- [Py-NEWS] : https://pyscript.net/  ← [Py-Scrtipt.Net] Link 
 
 <hr>
 
