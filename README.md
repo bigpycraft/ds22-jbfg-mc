@@ -29,12 +29,15 @@
 - [Python Programming Basics             ][Sect-A]
 - [Jupyter Notebook Practice             ][Sect-B]
 - [Python Packages and Modules           ][Sect-C]
+- [Team Project 1st - Golf Score Mgr     ][Proj-1]
 - [Essential Packages for Data Analysis  ][Sect-D]
 
 [Sect-A]: ./Sect-A/                  "Go Sect-A"
 [Sect-B]: ./Sect-B/                  "Go Sect-B"
 [Sect-C]: ./Sect-C/                  "Go Sect-C"
 [Sect-D]: ./Sect-D/                  "Go Sect-D"
+
+[Proj-1]: ./Team-Project/pilot_project_1st/   "Go Proj-1"
 
 <hr>
 
