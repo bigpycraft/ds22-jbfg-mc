@@ -42,13 +42,13 @@
 		</td>
 	</tr>
 </table>
-- 프로젝트 과제 : 골프스코어관리
 
 
 
 <hr>
 
-##  <font color='#00AAAA'>프로젝틑 결과보고</font>
+##  <font color='#00AAAA'>프로젝트 결과보고</font>
+- 프로젝트 과제  Presentation & Simulation 
 
 ### <font color="red">Project Team 1 </font>
 
