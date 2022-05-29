@@ -31,6 +31,22 @@
 > - [ 2) Advanced indexing and index tricks      ][B4160]
 
 
+
+#### 5. Pandas 
+
+> 5-1. Pandas Basics 
+> - [ 1) Pandas data structures : Series, DataFrame        ][B4210]
+> - [ 2) Essential functionality                           ][B4220]
+> - [ 3) Summarizing and computing descriptive statistics  ][B4230]
+> - [ 4) Handling missing data                             ][B4240]
+> - [ 5) Hierarchical indexing                             ][B4250]
+> 
+> 5-2. Pandas Practice 
+> - [ 1) Getting Ready... ][Ready]
+> - [ 2) Getting Ready... ][Ready]
+
+
+
 <!--
 > 4-1. Numpy Basics 
 > <br/> (1) [ NumPy ndarray, Slicing & Indexing       ][B4110]
@@ -63,6 +79,7 @@
 
 -->
 
+[Ready]:  #    "Getting Ready"
 
 [B4100]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B410_NumPy.html                       "Go B4010"
 [B4110]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B411_NumPy_Basics1.html               "Go B4110"
@@ -70,6 +87,12 @@
 [B4130]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B413_NumPy_Basics3.html               "Go B4130"
 [B4150]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B415_NumPy_Practice1.html             "Go B4150"
 [B4160]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B416_NumPy_Practice2.html             "Go B4160"
+
+[B4210]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B421_Pandas_Basics1.html              "Go B4210"
+[B4220]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B422_Pandas_Basics2.html              "Go B4220"
+[B4230]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B423_Pandas_Basics3.html              "Go B4230"
+[B4240]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B424_Pandas_Basics4.html              "Go B4240"
+[B4250]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B425_Pandas_Basics5.html              "Go B4250"
 
 
 [A1010]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_A101_Review_DataType.html                      "Go A1010"
@@ -114,22 +137,3 @@
 <hr>
 <marquee><font size=3 color='brown'>The BigpyCraft find the information to design valuable society with Technology & Craft.</font></marquee>
 <div align='right'><font size=2 color='gray'> &lt; The End &gt; </font></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
