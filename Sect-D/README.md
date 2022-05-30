@@ -40,11 +40,12 @@
 > - [ 3) Summarizing and computing descriptive statistics  ][B4230]
 > - [ 4) Handling missing data                             ][B4240]
 > - [ 5) Hierarchical indexing                             ][B4250]
+> - [ 6) Other pandas topics                               ][B4250]
 > 
 > 5-2. Pandas Practice 
-> - [ 1) Getting Ready... ][Ready]
-> - [ 2) Getting Ready... ][Ready]
-
+> - [ 1) Viewing, Selection, Missing Data, Operation       ][B4291]
+> - [ 2) Merge, Grouping, Reshaping, Time, Categoriclas    ][B4292]
+> - [ 3) Plotting, Getting Data In/Out                     ][B4293]
 
 
 <!--
@@ -56,6 +57,23 @@
 > 4-2. Numpy Practice 
 > <br/> (1) [ Basic Operation, Shape Manipulation     ][B4150]
 > <br/> (2) [ Advanced indexing and index tricks      ][B4160]
+
+
+#### 5. Pandas 
+
+> 5-1. Pandas Basics 
+> - [ 1) Pandas data structures : Series, DataFrame        ][B4210]
+> - [ 2) Essential functionality                           ][B4220]
+> - [ 3) Summarizing and computing descriptive statistics  ][B4230]
+> - [ 4) Handling missing data                             ][B4240]
+> - [ 5) Hierarchical indexing                             ][B4250]
+> - [ 6) Other pandas topics                               ][B4250]
+
+
+> 5-2. Pandas Practice 
+> - [ 1) Getting Ready... ][Ready]
+> - [ 2) Getting Ready... ][Ready]
+
 
 -----------------------------------------------------------------------
 
@@ -93,6 +111,11 @@
 [B4230]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B423_Pandas_Basics3.html              "Go B4230"
 [B4240]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B424_Pandas_Basics4.html              "Go B4240"
 [B4250]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B425_Pandas_Basics5.html              "Go B4250"
+[B4260]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B426_Pandas_Basics6.html              "Go B4260"
+
+[B4291]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B429_Pandas_Practice1.html            "Go B4291"
+[B4292]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B429_Pandas_Practice2.html            "Go B4292"
+[B4293]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B429_Pandas_Practice3.html            "Go B4293"
 
 
 [A1010]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_A101_Review_DataType.html                      "Go A1010"
