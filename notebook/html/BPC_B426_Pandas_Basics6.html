@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>BPC_B425_Pandas_Basics5</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>BPC_B426_Pandas_Basics6</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -13982,7 +13982,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Pandas-Basic-V">Pandas Basic V<a class="anchor-link" href="#Pandas-Basic-V">&#182;</a></h1>
+<h1 id="Pandas-Basic-VI">Pandas Basic VI<a class="anchor-link" href="#Pandas-Basic-VI">&#182;</a></h1>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
@@ -14006,10 +14006,16 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="5.-Hierarchical-indexing">5. Hierarchical indexing<a class="anchor-link" href="#5.-Hierarchical-indexing">&#182;</a></h2><blockquote><p>계층적 색인</p>
+<h2 id="6.-Other-pandas-topics">6. Other pandas topics<a class="anchor-link" href="#6.-Other-pandas-topics">&#182;</a></h2><blockquote><p>pandas와 관련된 기타 주제</p>
+</blockquote>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="-Integer-indexing-"><font color="brown"> Integer indexing </font><a class="anchor-link" href="#-Integer-indexing-">&#182;</a></h3><blockquote><p>정수 색인</p>
 <ul>
-<li>축에 대해 다중(둘 이상) 색인 단계를 지정할 수 있도록 해준다.</li>
-<li>차원이 높은(고차원) 데이터를 낮은 차원의 형식으로 다룰 수 있게 해주는 기능이다.</li>
+<li>pandas 객체를 정수로 색인해서 사용하는 일은 파이썬에서 리스트나 튜플 같은 기본 자료 구조에서 사용하는 색인의 의미와 약간 달라서 종종 실수를 할 수 있으므로 주의한다 !!</li>
 </ul>
 </blockquote>
 
@@ -14020,10 +14026,8 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">Series</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span>
-              <span class="n">index</span><span class="o">=</span><span class="p">[[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">],</span>
-                     <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]])</span>
-<span class="n">data</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ser</span> <span class="o">=</span> <span class="n">Series</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">3.</span><span class="p">))</span>
+<span class="n">ser</span>
 </pre></div>
 
      </div>
@@ -14045,16 +14049,9 @@ a.anchor-link {
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>a  1   -1.759041
-   2   -0.498734
-   3   -0.239058
-b  1    0.093036
-   2    0.479149
-   3    0.188494
-c  1   -0.398746
-   2   -0.055520
-d  2    1.124079
-   3    0.987553
+<pre>0    0.0
+1    1.0
+2    2.0
 dtype: float64</pre>
 </div>
 
@@ -14070,7 +14067,7 @@ dtype: float64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">index</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ser</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -14092,17 +14089,7 @@ dtype: float64</pre>
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>MultiIndex([(&#39;a&#39;, 1),
-            (&#39;a&#39;, 2),
-            (&#39;a&#39;, 3),
-            (&#39;b&#39;, 1),
-            (&#39;b&#39;, 2),
-            (&#39;b&#39;, 3),
-            (&#39;c&#39;, 1),
-            (&#39;c&#39;, 2),
-            (&#39;d&#39;, 2),
-            (&#39;d&#39;, 3)],
-           )</pre>
+<pre>2.0</pre>
 </div>
 
 </div>
@@ -14117,7 +14104,8 @@ dtype: float64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ser2</span> <span class="o">=</span> <span class="n">Series</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">3.</span><span class="p">),</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">])</span>
+<span class="n">ser2</span>
 </pre></div>
 
      </div>
@@ -14139,9 +14127,9 @@ dtype: float64</pre>
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>1    0.093036
-2    0.479149
-3    0.188494
+<pre>a    0.0
+b    1.0
+c    2.0
 dtype: float64</pre>
 </div>
 
@@ -14157,7 +14145,7 @@ dtype: float64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">:</span><span class="s1">&#39;c&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ser2</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -14179,11 +14167,46 @@ dtype: float64</pre>
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>b  1    0.093036
-   2    0.479149
-   3    0.188494
-c  1   -0.398746
-   2   -0.055520
+<pre>2.0</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># ser.ix[:1]</span>
+<span class="n">ser</span><span class="o">.</span><span class="n">loc</span><span class="p">[:</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>0    0.0
+1    1.0
 dtype: float64</pre>
 </div>
 
@@ -14193,28 +14216,13 @@ dtype: float64</pre>
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># AttributeError</span>
-<span class="c1"># data.ix[[&#39;b&#39;, &#39;d&#39;]]</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">]]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ser</span><span class="o">.</span><span class="n">loc</span><span class="p">[:</span><span class="mi">1</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -14236,11 +14244,8 @@ dtype: float64</pre>
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>b  1    0.093036
-   2    0.479149
-   3    0.188494
-d  2    1.124079
-   3    0.987553
+<pre>0    0.0
+1    1.0
 dtype: float64</pre>
 </div>
 
@@ -14256,7 +14261,7 @@ dtype: float64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ser</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">1</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -14278,10 +14283,7 @@ dtype: float64</pre>
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>a   -0.498734
-b    0.479149
-c   -0.055520
-d    1.124079
+<pre>0    0.0
 dtype: float64</pre>
 </div>
 
@@ -14294,10 +14296,10 @@ dtype: float64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># ? data.unstack</span>
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
      </div>
@@ -14308,10 +14310,51 @@ dtype: float64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ser3</span> <span class="o">=</span> <span class="n">Series</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="n">ser3</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>-5    0
+ 1    1
+ 3    2
+dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">unstack</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ser3</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -14328,6 +14371,44 @@ dtype: float64</pre>
 
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>2</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">frame</span> <span class="o">=</span> <span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">)),</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+<span class="n">frame</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
 
 
 
@@ -14350,35 +14431,25 @@ dtype: float64</pre>
   <thead>
     <tr style="text-align: right;">
       <th></th>
+      <th>0</th>
       <th>1</th>
-      <th>2</th>
-      <th>3</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>a</th>
-      <td>-1.759041</td>
-      <td>-0.498734</td>
-      <td>-0.239058</td>
+      <th>2</th>
+      <td>0</td>
+      <td>1</td>
     </tr>
     <tr>
-      <th>b</th>
-      <td>0.093036</td>
-      <td>0.479149</td>
-      <td>0.188494</td>
+      <th>0</th>
+      <td>2</td>
+      <td>3</td>
     </tr>
     <tr>
-      <th>c</th>
-      <td>-0.398746</td>
-      <td>-0.055520</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>d</th>
-      <td>NaN</td>
-      <td>1.124079</td>
-      <td>0.987553</td>
+      <th>1</th>
+      <td>4</td>
+      <td>5</td>
     </tr>
   </tbody>
 </table>
@@ -14394,57 +14465,10 @@ dtype: float64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">unstack</span><span class="p">()</span><span class="o">.</span><span class="n">stack</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>a  1   -1.759041
-   2   -0.498734
-   3   -0.239058
-b  1    0.093036
-   2    0.479149
-   3    0.188494
-c  1   -0.398746
-   2   -0.055520
-d  2    1.124079
-   3    0.987553
-dtype: float64</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">frame</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -14466,17 +14490,9 @@ dtype: float64</pre>
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>a  1   -1.759041
-   2   -0.498734
-   3   -0.239058
-b  1    0.093036
-   2    0.479149
-   3    0.188494
-c  1   -0.398746
-   2   -0.055520
-d  2    1.124079
-   3    0.987553
-dtype: float64</pre>
+<pre>0    0
+1    1
+Name: 2, dtype: int32</pre>
 </div>
 
 </div>
@@ -14488,19 +14504,15 @@ dtype: float64</pre>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<blockquote><p>계층적 색인</p>
+<h3 id="-Panel-data-:----is-no-longer-supported-in-Pandas-"><font color="gray"> Panel data :</font>   <font color="red"> is no longer supported in Pandas </font><a class="anchor-link" href="#-Panel-data-:----is-no-longer-supported-in-Pandas-">&#182;</a></h3><blockquote><p>Panel 데이터</p>
 <ul>
-<li>DataFrame에서는 두 축 모두 계층적 색인을 가질수 있다.</li>
-<li>각 단계는 이름을 가질 수 있고, (문자열이나 어떤 파이썬 객체라도 가능하다)</li>
-<li>만약 이름이 있다면 콘솔 출력 시에 함께 나타난다. </li>
+<li>Panel : DataFrame 객체를 담고 있는 사전이나 3차원 ndarray를 통해 생성할 수 있다.</li>
+<li>Panel은 DataFrame의 3차원 버전이라고 이해 !!</li>
+<li>pandas 개발은 스프레드시트 형식의 데이터를 다루는 데 초점을 맞추고 있고,</li>
+<li>계층적 색인을 이용하면 대개의 경우 N차원 배열은 불필요하다.</li>
 </ul>
 </blockquote>
 
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="-%EC%83%89%EC%9D%B8%EC%9D%98-%EC%9D%B4%EB%A6%84%EA%B3%BC-%EC%B6%95%EC%9D%98-%EB%9D%BC%EB%B2%A8%EC%9D%84-%ED%98%BC%EB%8F%99%ED%95%98%EC%A7%80-%EB%A7%90%EA%B2%83-!!!-"><font color="blue"> &#49353;&#51064;&#51032; &#51060;&#47492;&#44284; &#52629;&#51032; &#46972;&#48296;&#51012; &#54844;&#46041;&#54616;&#51648; &#47568;&#44163; !!! </font><a class="anchor-link" href="#-%EC%83%89%EC%9D%B8%EC%9D%98-%EC%9D%B4%EB%A6%84%EA%B3%BC-%EC%B6%95%EC%9D%98-%EB%9D%BC%EB%B2%A8%EC%9D%84-%ED%98%BC%EB%8F%99%ED%95%98%EC%A7%80-%EB%A7%90%EA%B2%83-!!!-">&#182;</a></h4>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
@@ -14508,11 +14520,7 @@ dtype: float64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">frame</span> <span class="o">=</span> <span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">)),</span>
-                  <span class="n">index</span><span class="o">=</span><span class="p">[[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]],</span>
-                  <span class="n">columns</span><span class="o">=</span><span class="p">[[</span><span class="s1">&#39;Ohio&#39;</span><span class="p">,</span> <span class="s1">&#39;Ohio&#39;</span><span class="p">,</span> <span class="s1">&#39;Colorado&#39;</span><span class="p">],</span>
-                           <span class="p">[</span><span class="s1">&#39;Green&#39;</span><span class="p">,</span> <span class="s1">&#39;Red&#39;</span><span class="p">,</span> <span class="s1">&#39;Green&#39;</span><span class="p">]])</span>
-<span class="n">frame</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="s2">&quot;현재 사용중인 pandas의 버전은 </span><span class="si">{}</span><span class="s2"> 입니다&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14532,67 +14540,9 @@ dtype: float64</pre>
 
 
 
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead tr th {
-        text-align: left;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr>
-      <th></th>
-      <th></th>
-      <th colspan="2" halign="left">Ohio</th>
-      <th>Colorado</th>
-    </tr>
-    <tr>
-      <th></th>
-      <th></th>
-      <th>Green</th>
-      <th>Red</th>
-      <th>Green</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th rowspan="2" valign="top">a</th>
-      <th>1</th>
-      <td>0</td>
-      <td>1</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>3</td>
-      <td>4</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th rowspan="2" valign="top">b</th>
-      <th>1</th>
-      <td>6</td>
-      <td>7</td>
-      <td>8</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>9</td>
-      <td>10</td>
-      <td>11</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&#39;현재 사용중인 pandas의 버전은 1.3.4 입니다&#39;</pre>
 </div>
 
 </div>
@@ -14601,112 +14551,62 @@ dtype: float64</pre>
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><!--
+import pandas_datareader as web
+
+출처: https://wendys.tistory.com/176?category=769564 [웬디의 기묘한 이야기:티스토리]
+
+https://wendys.tistory.com/173 - Pandas를 이용하여 주식 종목 코드 가져오기
+https://wendys.tistory.com/174 - pandas_datareader를 이용하여 주식 데이터 가져오기! Yahoo Finance
+
+
+예제로 배우는 파이썬 프로그래밍
+http://pythonstudy.xyz/
+- Python GUI
+- Python Data
+- Django 기초
+- Python 활용
+- Python TIP
+
+-->
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="%EC%83%81%EC%9E%A5%EB%B2%95%EC%9D%B8%EB%AA%A9%EB%A1%9D-%EB%8B%A4%EC%9A%B4">&#49345;&#51109;&#48277;&#51064;&#47785;&#47197; &#45796;&#50868;<a class="anchor-link" href="#%EC%83%81%EC%9E%A5%EB%B2%95%EC%9D%B8%EB%AA%A9%EB%A1%9D-%EB%8B%A4%EC%9A%B4">&#182;</a></h4><blockquote><ul>
+<li>한국거래소에서 상장법인목록을 엑셀로 다운로드하는 링크</li>
+<li><a href="http://kind.krx.co.kr/corpgeneral/corpList.do?method=download"> [상장법인목록 다운로드] </a></li>
+</ul>
+</blockquote>
+
+</div>
+</div><!--
+CASE1
+# excel 파일을 다운로드하는거와 동시에 pandas에 load하기
+# 흔히 사용하는 df라는 변수는 data frame을 의미합니다.
+df = pd.read_html('http://kind.krx.co.kr/corpgeneral/corpList.do?method=download', header=0)
+
+
+CASE2
+df = pd.read_html('./data/상장법인목록.xls', header=0)[0]
+df.head()
+-->
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="Case1.-Download-Excel-Loading">Case1. Download Excel Loading<a class="anchor-link" href="#Case1.-Download-Excel-Loading">&#182;</a></h4>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">frame</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">names</span>   <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;key1&#39;</span><span class="p">,</span>  <span class="s1">&#39;key2&#39;</span><span class="p">]</span>
-<span class="n">frame</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;state&#39;</span><span class="p">,</span> <span class="s1">&#39;color&#39;</span><span class="p">]</span>
-<span class="n">frame</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># excel 파일을 다운로드하는거와 동시에 pandas에 load하기</span>
+<span class="c1"># 흔히 사용하는 df라는 변수는 data frame을 의미합니다.</span>
+<span class="n">download</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_html</span><span class="p">(</span><span class="s1">&#39;http://kind.krx.co.kr/corpgeneral/corpList.do?method=download&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 </pre></div>
 
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead tr th {
-        text-align: left;
-    }
-
-    .dataframe thead tr:last-of-type th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr>
-      <th></th>
-      <th>state</th>
-      <th colspan="2" halign="left">Ohio</th>
-      <th>Colorado</th>
-    </tr>
-    <tr>
-      <th></th>
-      <th>color</th>
-      <th>Green</th>
-      <th>Red</th>
-      <th>Green</th>
-    </tr>
-    <tr>
-      <th>key1</th>
-      <th>key2</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th rowspan="2" valign="top">a</th>
-      <th>1</th>
-      <td>0</td>
-      <td>1</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>3</td>
-      <td>4</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th rowspan="2" valign="top">b</th>
-      <th>1</th>
-      <td>6</td>
-      <td>7</td>
-      <td>8</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>9</td>
-      <td>10</td>
-      <td>11</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -14715,7 +14615,7 @@ dtype: float64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">frame</span><span class="p">[</span><span class="s1">&#39;Ohio&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">download</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14732,6 +14632,118 @@ dtype: float64</pre>
 
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>list</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">download</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>1</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">download</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>pandas.core.frame.DataFrame</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">corp_df</span> <span class="o">=</span> <span class="n">download</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">corp_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
 
 
 
@@ -14754,39 +14766,77 @@ dtype: float64</pre>
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>color</th>
-      <th>Green</th>
-      <th>Red</th>
-    </tr>
-    <tr>
-      <th>key1</th>
-      <th>key2</th>
-      <th></th>
-      <th></th>
+      <th>회사명</th>
+      <th>종목코드</th>
+      <th>업종</th>
+      <th>주요제품</th>
+      <th>상장일</th>
+      <th>결산월</th>
+      <th>대표자명</th>
+      <th>홈페이지</th>
+      <th>지역</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th rowspan="2" valign="top">a</th>
+      <th>0</th>
+      <td>DL</td>
+      <td>210</td>
+      <td>기타 금융업</td>
+      <td>지주회사</td>
+      <td>1976-02-02</td>
+      <td>12월</td>
+      <td>전병욱</td>
+      <td>http://www.dlholdings.co.kr</td>
+      <td>서울특별시</td>
+    </tr>
+    <tr>
       <th>1</th>
-      <td>0</td>
-      <td>1</td>
+      <td>DRB동일</td>
+      <td>4840</td>
+      <td>고무제품 제조업</td>
+      <td>고무벨트(V벨트,콘베이어벨트,평벨트),프라스틱제품 제조,판매</td>
+      <td>1976-05-21</td>
+      <td>12월</td>
+      <td>류영식</td>
+      <td>http://drbworld.com</td>
+      <td>부산광역시</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>3</td>
-      <td>4</td>
+      <td>DSR</td>
+      <td>155660</td>
+      <td>1차 비철금속 제조업</td>
+      <td>합섬섬유로프</td>
+      <td>2013-05-15</td>
+      <td>12월</td>
+      <td>홍석빈</td>
+      <td>http://www.dsr.com</td>
+      <td>부산광역시</td>
     </tr>
     <tr>
-      <th rowspan="2" valign="top">b</th>
-      <th>1</th>
-      <td>6</td>
-      <td>7</td>
+      <th>3</th>
+      <td>GS</td>
+      <td>78930</td>
+      <td>기타 금융업</td>
+      <td>지주회사/부동산 임대</td>
+      <td>2004-08-05</td>
+      <td>12월</td>
+      <td>허태수, 홍순기 (각자 대표이사)</td>
+      <td>NaN</td>
+      <td>서울특별시</td>
     </tr>
     <tr>
-      <th>2</th>
-      <td>9</td>
-      <td>10</td>
+      <th>4</th>
+      <td>KG케미칼</td>
+      <td>1390</td>
+      <td>기초 화학물질 제조업</td>
+      <td>콘크리트혼화제, 비료, 친환경농자재, 수처리제</td>
+      <td>1989-08-25</td>
+      <td>12월</td>
+      <td>곽정현, 김재익</td>
+      <td>http://www.kgchem.co.kr</td>
+      <td>울산광역시</td>
     </tr>
   </tbody>
 </table>
@@ -14799,269 +14849,13 @@ dtype: float64</pre>
 
 </div>
 
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="-MultiIndex-"><font color="blue"> MultiIndex </font><a class="anchor-link" href="#-MultiIndex-">&#182;</a></h4><blockquote><ul>
-<li>MultiIndex는 따로 생성한 다음에 재사용이 가능하다.</li>
-<li>위의 DataFrame의 칼럼 계층의 이름은 다음과 같이 생성할 수 있다.<hr></li>
-</ul>
-<div class="highlight"><pre><span></span><span class="n">MultiIndex</span><span class="o">.</span><span class="n">from_arrays</span><span class="p">([[</span><span class="s1">&#39;Ohio&#39;</span><span class="p">,</span> <span class="s1">&#39;Ohio&#39;</span><span class="p">,</span> <span class="s1">&#39;Colorado&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Green&#39;</span><span class="p">,</span> <span class="s1">&#39;Red&#39;</span><span class="p">,</span> <span class="s1">&#39;Green&#39;</span><span class="p">]],</span>
-                       <span class="n">names</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;state&#39;</span><span class="p">,</span> <span class="s1">&#39;color&#39;</span><span class="p">])</span>
-</pre></div>
-</blockquote>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="-Reordering-and-sorting-levels-"><font color="brown"> Reordering and sorting levels </font><a class="anchor-link" href="#-Reordering-and-sorting-levels-">&#182;</a></h3><blockquote><p>계층 순서 바꾸고 정렬하기</p>
-</blockquote>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">frame</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead tr th {
-        text-align: left;
-    }
-
-    .dataframe thead tr:last-of-type th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr>
-      <th></th>
-      <th>state</th>
-      <th colspan="2" halign="left">Ohio</th>
-      <th>Colorado</th>
-    </tr>
-    <tr>
-      <th></th>
-      <th>color</th>
-      <th>Green</th>
-      <th>Red</th>
-      <th>Green</th>
-    </tr>
-    <tr>
-      <th>key1</th>
-      <th>key2</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th rowspan="2" valign="top">a</th>
-      <th>1</th>
-      <td>0</td>
-      <td>1</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>3</td>
-      <td>4</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th rowspan="2" valign="top">b</th>
-      <th>1</th>
-      <td>6</td>
-      <td>7</td>
-      <td>8</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>9</td>
-      <td>10</td>
-      <td>11</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">frame</span><span class="o">.</span><span class="n">swaplevel</span><span class="p">(</span><span class="s1">&#39;key1&#39;</span><span class="p">,</span> <span class="s1">&#39;key2&#39;</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead tr th {
-        text-align: left;
-    }
-
-    .dataframe thead tr:last-of-type th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr>
-      <th></th>
-      <th>state</th>
-      <th colspan="2" halign="left">Ohio</th>
-      <th>Colorado</th>
-    </tr>
-    <tr>
-      <th></th>
-      <th>color</th>
-      <th>Green</th>
-      <th>Red</th>
-      <th>Green</th>
-    </tr>
-    <tr>
-      <th>key2</th>
-      <th>key1</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>1</th>
-      <th>a</th>
-      <td>0</td>
-      <td>1</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <th>a</th>
-      <td>3</td>
-      <td>4</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <th>b</th>
-      <td>6</td>
-      <td>7</td>
-      <td>8</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <th>b</th>
-      <td>9</td>
-      <td>10</td>
-      <td>11</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># AttributeError|</span>
-<span class="c1"># frame.sortlevel(by=[&#39;key1&#39;, &#39;key2&#39;])</span>
-<span class="c1"># frame.swaplevel(0, 1).sortlevel(0)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><font color='blue'> [NOTE] 객체가 계층적 색인으로 상위 계층부터 사전식으로 정렬이 되어 있다면 (sortlevel(0)이나 sort_index()의 결과처럼) 데이터를 선택하는 성능이 훨씬 좋아진다.</font></p>
-
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">frame</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">corp_df</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15081,78 +14875,9 @@ dtype: float64</pre>
 
 
 
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead tr th {
-        text-align: left;
-    }
-
-    .dataframe thead tr:last-of-type th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr>
-      <th></th>
-      <th>state</th>
-      <th colspan="2" halign="left">Ohio</th>
-      <th>Colorado</th>
-    </tr>
-    <tr>
-      <th></th>
-      <th>color</th>
-      <th>Green</th>
-      <th>Red</th>
-      <th>Green</th>
-    </tr>
-    <tr>
-      <th>key1</th>
-      <th>key2</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th rowspan="2" valign="top">a</th>
-      <th>1</th>
-      <td>0</td>
-      <td>1</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>3</td>
-      <td>4</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th rowspan="2" valign="top">b</th>
-      <th>1</th>
-      <td>6</td>
-      <td>7</td>
-      <td>8</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>9</td>
-      <td>10</td>
-      <td>11</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>2498</pre>
 </div>
 
 </div>
@@ -15167,7 +14892,7 @@ dtype: float64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">frame</span><span class="o">.</span><span class="n">sort_index</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">corp_df</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -15198,63 +14923,85 @@ dtype: float64</pre>
         vertical-align: top;
     }
 
-    .dataframe thead tr th {
-        text-align: left;
-    }
-
-    .dataframe thead tr:last-of-type th {
+    .dataframe thead th {
         text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr>
+    <tr style="text-align: right;">
       <th></th>
-      <th>state</th>
-      <th>Colorado</th>
-      <th colspan="2" halign="left">Ohio</th>
-    </tr>
-    <tr>
-      <th></th>
-      <th>color</th>
-      <th>Green</th>
-      <th>Green</th>
-      <th>Red</th>
-    </tr>
-    <tr>
-      <th>key1</th>
-      <th>key2</th>
-      <th></th>
-      <th></th>
-      <th></th>
+      <th>회사명</th>
+      <th>종목코드</th>
+      <th>업종</th>
+      <th>주요제품</th>
+      <th>상장일</th>
+      <th>결산월</th>
+      <th>대표자명</th>
+      <th>홈페이지</th>
+      <th>지역</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th rowspan="2" valign="top">a</th>
-      <th>1</th>
-      <td>2</td>
-      <td>0</td>
-      <td>1</td>
+      <th>2493</th>
+      <td>타임기술</td>
+      <td>318660</td>
+      <td>소프트웨어 개발 및 공급업</td>
+      <td>ILS(종합군수지원), IETM(전자식기술교범), CBT(전자식교보재), 기술번역</td>
+      <td>2021-06-24</td>
+      <td>12월</td>
+      <td>주양효</td>
+      <td>http://timett.co.kr</td>
+      <td>경상남도</td>
     </tr>
     <tr>
-      <th>2</th>
-      <td>5</td>
-      <td>3</td>
-      <td>4</td>
+      <th>2494</th>
+      <td>틸론</td>
+      <td>217880</td>
+      <td>소프트웨어 개발 및 공급업</td>
+      <td>Cloud Solution (D,A,E,Rstation)</td>
+      <td>2015-05-28</td>
+      <td>12월</td>
+      <td>최백준</td>
+      <td>http://www.tilon.co.kr</td>
+      <td>서울특별시</td>
     </tr>
     <tr>
-      <th rowspan="2" valign="top">b</th>
-      <th>1</th>
-      <td>8</td>
-      <td>6</td>
-      <td>7</td>
+      <th>2495</th>
+      <td>플럼라인생명과학</td>
+      <td>222670</td>
+      <td>자연과학 및 공학 연구개발업</td>
+      <td>강아지암치료제,돼지DNA테라피</td>
+      <td>2015-07-28</td>
+      <td>12월</td>
+      <td>김앤토니경태</td>
+      <td>http://www.plsdna.com</td>
+      <td>서울특별시</td>
     </tr>
     <tr>
-      <th>2</th>
-      <td>11</td>
-      <td>9</td>
-      <td>10</td>
+      <th>2496</th>
+      <td>한국미라클피플사</td>
+      <td>331660</td>
+      <td>기타 화학제품 제조업</td>
+      <td>은나노스텝, 닥터오렌지 등</td>
+      <td>2019-10-28</td>
+      <td>12월</td>
+      <td>이호경</td>
+      <td>http://www.kmpc.co.kr</td>
+      <td>경기도</td>
+    </tr>
+    <tr>
+      <th>2497</th>
+      <td>휴벡셀</td>
+      <td>212310</td>
+      <td>의료용 기기 제조업</td>
+      <td>척추용 임플란트 등</td>
+      <td>2016-07-26</td>
+      <td>12월</td>
+      <td>박정민, 허성규(각자대표)</td>
+      <td>http://huvexel.com</td>
+      <td>경기도</td>
     </tr>
   </tbody>
 </table>
@@ -15267,13 +15014,33 @@ dtype: float64</pre>
 
 </div>
 
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="Case2.-Download-Excel-Loading">Case2. Download Excel Loading<a class="anchor-link" href="#Case2.-Download-Excel-Loading">&#182;</a></h4>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">frame</span><span class="o">.</span><span class="n">sort_index</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;./data/Stock_Corporations.xlsx&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -15304,63 +15071,85 @@ dtype: float64</pre>
         vertical-align: top;
     }
 
-    .dataframe thead tr th {
-        text-align: left;
-    }
-
-    .dataframe thead tr:last-of-type th {
+    .dataframe thead th {
         text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr>
+    <tr style="text-align: right;">
       <th></th>
-      <th>state</th>
-      <th colspan="2" halign="left">Ohio</th>
-      <th>Colorado</th>
-    </tr>
-    <tr>
-      <th></th>
-      <th>color</th>
-      <th>Red</th>
-      <th>Green</th>
-      <th>Green</th>
-    </tr>
-    <tr>
-      <th>key1</th>
-      <th>key2</th>
-      <th></th>
-      <th></th>
-      <th></th>
+      <th>회사명</th>
+      <th>종목코드</th>
+      <th>업종</th>
+      <th>주요제품</th>
+      <th>상장일</th>
+      <th>결산월</th>
+      <th>대표자명</th>
+      <th>홈페이지</th>
+      <th>지역</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th rowspan="2" valign="top">a</th>
+      <th>0</th>
+      <td>DL</td>
+      <td>210</td>
+      <td>기타 금융업</td>
+      <td>지주회사</td>
+      <td>1976-02-02</td>
+      <td>12월</td>
+      <td>전병욱</td>
+      <td>http://www.dlholdings.co.kr</td>
+      <td>서울특별시</td>
+    </tr>
+    <tr>
       <th>1</th>
-      <td>1</td>
-      <td>0</td>
-      <td>2</td>
+      <td>DRB동일</td>
+      <td>4840</td>
+      <td>고무제품 제조업</td>
+      <td>고무벨트(V벨트,콘베이어벨트,평벨트),프라스틱제품 제조,판매</td>
+      <td>1976-05-21</td>
+      <td>12월</td>
+      <td>류영식</td>
+      <td>http://drbworld.com</td>
+      <td>부산광역시</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>4</td>
-      <td>3</td>
-      <td>5</td>
+      <td>DSR</td>
+      <td>155660</td>
+      <td>1차 비철금속 제조업</td>
+      <td>합섬섬유로프</td>
+      <td>2013-05-15</td>
+      <td>12월</td>
+      <td>홍석빈</td>
+      <td>http://www.dsr.com</td>
+      <td>부산광역시</td>
     </tr>
     <tr>
-      <th rowspan="2" valign="top">b</th>
-      <th>1</th>
-      <td>7</td>
-      <td>6</td>
-      <td>8</td>
+      <th>3</th>
+      <td>GS</td>
+      <td>78930</td>
+      <td>기타 금융업</td>
+      <td>지주회사/부동산 임대</td>
+      <td>2004-08-05</td>
+      <td>12월</td>
+      <td>허태수, 홍순기 (각자 대표이사)</td>
+      <td>NaN</td>
+      <td>서울특별시</td>
     </tr>
     <tr>
-      <th>2</th>
-      <td>10</td>
-      <td>9</td>
-      <td>11</td>
+      <th>4</th>
+      <td>KG케미칼</td>
+      <td>1390</td>
+      <td>기초 화학물질 제조업</td>
+      <td>콘크리트혼화제, 비료, 친환경농자재, 수처리제</td>
+      <td>1989-08-25</td>
+      <td>12월</td>
+      <td>곽정현, 김재익</td>
+      <td>http://www.kgchem.co.kr</td>
+      <td>울산광역시</td>
     </tr>
   </tbody>
 </table>
@@ -15379,7 +15168,7 @@ dtype: float64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">frame</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;key1&#39;</span><span class="p">,</span> <span class="s1">&#39;key2&#39;</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15399,78 +15188,9 @@ dtype: float64</pre>
 
 
 
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead tr th {
-        text-align: left;
-    }
-
-    .dataframe thead tr:last-of-type th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr>
-      <th></th>
-      <th>state</th>
-      <th colspan="2" halign="left">Ohio</th>
-      <th>Colorado</th>
-    </tr>
-    <tr>
-      <th></th>
-      <th>color</th>
-      <th>Green</th>
-      <th>Red</th>
-      <th>Green</th>
-    </tr>
-    <tr>
-      <th>key1</th>
-      <th>key2</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th rowspan="2" valign="top">a</th>
-      <th>1</th>
-      <td>0</td>
-      <td>1</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>3</td>
-      <td>4</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th rowspan="2" valign="top">b</th>
-      <th>1</th>
-      <td>6</td>
-      <td>7</td>
-      <td>8</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>9</td>
-      <td>10</td>
-      <td>11</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>2499</pre>
 </div>
 
 </div>
@@ -15485,7 +15205,7 @@ dtype: float64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">frame</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;key2&#39;</span><span class="p">,</span> <span class="s1">&#39;key1&#39;</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -15516,65 +15236,85 @@ dtype: float64</pre>
         vertical-align: top;
     }
 
-    .dataframe thead tr th {
-        text-align: left;
-    }
-
-    .dataframe thead tr:last-of-type th {
+    .dataframe thead th {
         text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr>
+    <tr style="text-align: right;">
       <th></th>
-      <th>state</th>
-      <th colspan="2" halign="left">Ohio</th>
-      <th>Colorado</th>
-    </tr>
-    <tr>
-      <th></th>
-      <th>color</th>
-      <th>Green</th>
-      <th>Red</th>
-      <th>Green</th>
-    </tr>
-    <tr>
-      <th>key1</th>
-      <th>key2</th>
-      <th></th>
-      <th></th>
-      <th></th>
+      <th>회사명</th>
+      <th>종목코드</th>
+      <th>업종</th>
+      <th>주요제품</th>
+      <th>상장일</th>
+      <th>결산월</th>
+      <th>대표자명</th>
+      <th>홈페이지</th>
+      <th>지역</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>a</th>
-      <th>1</th>
-      <td>0</td>
-      <td>1</td>
-      <td>2</td>
+      <th>2494</th>
+      <td>타임기술</td>
+      <td>318660</td>
+      <td>소프트웨어 개발 및 공급업</td>
+      <td>ILS(종합군수지원), IETM(전자식기술교범), CBT(전자식교보재), 기술번역</td>
+      <td>2021-06-24</td>
+      <td>12월</td>
+      <td>주양효</td>
+      <td>http://timett.co.kr</td>
+      <td>경상남도</td>
     </tr>
     <tr>
-      <th>b</th>
-      <th>1</th>
-      <td>6</td>
-      <td>7</td>
-      <td>8</td>
+      <th>2495</th>
+      <td>틸론</td>
+      <td>217880</td>
+      <td>소프트웨어 개발 및 공급업</td>
+      <td>Cloud Solution (D,A,E,Rstation)</td>
+      <td>2015-05-28</td>
+      <td>12월</td>
+      <td>최백준</td>
+      <td>http://www.tilon.co.kr</td>
+      <td>서울특별시</td>
     </tr>
     <tr>
-      <th>a</th>
-      <th>2</th>
-      <td>3</td>
-      <td>4</td>
-      <td>5</td>
+      <th>2496</th>
+      <td>플럼라인생명과학</td>
+      <td>222670</td>
+      <td>자연과학 및 공학 연구개발업</td>
+      <td>강아지암치료제,돼지DNA테라피</td>
+      <td>2015-07-28</td>
+      <td>12월</td>
+      <td>김앤토니경태</td>
+      <td>http://www.plsdna.com</td>
+      <td>서울특별시</td>
     </tr>
     <tr>
-      <th>b</th>
-      <th>2</th>
-      <td>9</td>
-      <td>10</td>
-      <td>11</td>
+      <th>2497</th>
+      <td>한국미라클피플사</td>
+      <td>331660</td>
+      <td>기타 화학제품 제조업</td>
+      <td>은나노스텝, 닥터오렌지 등</td>
+      <td>2019-10-28</td>
+      <td>12월</td>
+      <td>이호경</td>
+      <td>http://www.kmpc.co.kr</td>
+      <td>경기도</td>
+    </tr>
+    <tr>
+      <th>2498</th>
+      <td>휴벡셀</td>
+      <td>212310</td>
+      <td>의료용 기기 제조업</td>
+      <td>척추용 임플란트 등</td>
+      <td>2016-07-26</td>
+      <td>12월</td>
+      <td>박정민, 허성규(각자대표)</td>
+      <td>http://huvexel.com</td>
+      <td>경기도</td>
     </tr>
   </tbody>
 </table>
@@ -15587,24 +15327,15 @@ dtype: float64</pre>
 
 </div>
 
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="-Summary-statistics-by-level-"><font color="brown"> Summary statistics by level </font><a class="anchor-link" href="#-Summary-statistics-by-level-">&#182;</a></h3><blockquote><p>단계별 요약통계</p>
-<ul>
-<li>level 옵션 : 어떤 한 축에 대해 합을 구하고 싶은 단계를 지정할 수 있는 옵션</li>
-<li>내부적으로는 pandas의 groupby 기능을 이용해서 구현되었다.</li>
-</ul>
-</blockquote>
-
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">frame</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># pandas data frame을 &#39;상장일&#39; 기준으로 정렬 (ascending=[True], [False]로 오름차순, 내림차순 정렬)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">([</span><span class="s1">&#39;상장일&#39;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> 
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -15635,63 +15366,85 @@ dtype: float64</pre>
         vertical-align: top;
     }
 
-    .dataframe thead tr th {
-        text-align: left;
-    }
-
-    .dataframe thead tr:last-of-type th {
+    .dataframe thead th {
         text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr>
+    <tr style="text-align: right;">
       <th></th>
-      <th>state</th>
-      <th colspan="2" halign="left">Ohio</th>
-      <th>Colorado</th>
-    </tr>
-    <tr>
-      <th></th>
-      <th>color</th>
-      <th>Green</th>
-      <th>Red</th>
-      <th>Green</th>
-    </tr>
-    <tr>
-      <th>key1</th>
-      <th>key2</th>
-      <th></th>
-      <th></th>
-      <th></th>
+      <th>회사명</th>
+      <th>종목코드</th>
+      <th>업종</th>
+      <th>주요제품</th>
+      <th>상장일</th>
+      <th>결산월</th>
+      <th>대표자명</th>
+      <th>홈페이지</th>
+      <th>지역</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th rowspan="2" valign="top">a</th>
-      <th>1</th>
-      <td>0</td>
-      <td>1</td>
-      <td>2</td>
+      <th>1572</th>
+      <td>경방</td>
+      <td>50</td>
+      <td>종합 소매업</td>
+      <td>섬유류(면사,면혼방사,면직물,면혼방직물,화섬사,화섬직물) 제조,도매,수출입</td>
+      <td>1956-03-03</td>
+      <td>12월</td>
+      <td>김준, 김담</td>
+      <td>http://www.kyungbang.co.kr</td>
+      <td>서울특별시</td>
     </tr>
     <tr>
-      <th>2</th>
-      <td>3</td>
-      <td>4</td>
-      <td>5</td>
+      <th>2218</th>
+      <td>유수홀딩스</td>
+      <td>700</td>
+      <td>회사 본부 및 경영 컨설팅 서비스업</td>
+      <td>지주사업</td>
+      <td>1956-03-03</td>
+      <td>12월</td>
+      <td>송영규</td>
+      <td>http://www.eusu-holdings.com</td>
+      <td>서울특별시</td>
     </tr>
     <tr>
-      <th rowspan="2" valign="top">b</th>
-      <th>1</th>
-      <td>6</td>
-      <td>7</td>
-      <td>8</td>
+      <th>1021</th>
+      <td>한진중공업홀딩스</td>
+      <td>3480</td>
+      <td>연료용 가스 제조 및 배관공급업</td>
+      <td>지주회사</td>
+      <td>1956-03-03</td>
+      <td>12월</td>
+      <td>조남호, 조원국</td>
+      <td>http://www.hhic-holdings.com</td>
+      <td>경기도</td>
     </tr>
     <tr>
-      <th>2</th>
-      <td>9</td>
-      <td>10</td>
-      <td>11</td>
+      <th>1596</th>
+      <td>메리츠화재</td>
+      <td>60</td>
+      <td>보험업</td>
+      <td>손해보험(화재,해상,운송보험)</td>
+      <td>1956-07-02</td>
+      <td>12월</td>
+      <td>김용범</td>
+      <td>http://www.meritzfire.com</td>
+      <td>서울특별시</td>
+    </tr>
+    <tr>
+      <th>920</th>
+      <td>CJ대한통운</td>
+      <td>120</td>
+      <td>도로 화물 운송업</td>
+      <td>Contract Logistics, 포워딩, 항만하역, 해운, 택배국제특송, SCM...</td>
+      <td>1956-07-02</td>
+      <td>12월</td>
+      <td>강신호,민영학(각자대표)</td>
+      <td>http://www.cjlogistics.com</td>
+      <td>서울특별시</td>
     </tr>
   </tbody>
 </table>
@@ -15710,7 +15463,7 @@ dtype: float64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">frame</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="s1">&#39;key2&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">지역</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -15722,19 +15475,6 @@ dtype: float64</pre>
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>C:\Users\Public\Documents\ESTsoft\CreatorTemp/ipykernel_736/2004046222.py:1: FutureWarning: Using the level keyword in DataFrame and Series aggregations is deprecated and will be removed in a future version. Use groupby instead. df.sum(level=1) should use df.groupby(level=1).sum().
-  frame.sum(level=&#39;key2&#39;)
-</pre>
-</div>
-</div>
 
 <div class="jp-OutputArea-child">
 
@@ -15743,61 +15483,11 @@ dtype: float64</pre>
 
 
 
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead tr th {
-        text-align: left;
-    }
-
-    .dataframe thead tr:last-of-type th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr>
-      <th>state</th>
-      <th colspan="2" halign="left">Ohio</th>
-      <th>Colorado</th>
-    </tr>
-    <tr>
-      <th>color</th>
-      <th>Green</th>
-      <th>Red</th>
-      <th>Green</th>
-    </tr>
-    <tr>
-      <th>key2</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>1</th>
-      <td>6</td>
-      <td>8</td>
-      <td>10</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>12</td>
-      <td>14</td>
-      <td>16</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>array([&#39;서울특별시&#39;, &#39;경기도&#39;, &#39;인천광역시&#39;, &#39;부산광역시&#39;, &#39;제주특별자치도&#39;, &#39;경상남도&#39;, &#39;충청북도&#39;,
+       &#39;광주광역시&#39;, &#39;대구광역시&#39;, &#39;충청남도&#39;, &#39;경상북도&#39;, &#39;울산광역시&#39;, &#39;전라북도&#39;, &#39;전라남도&#39;, &#39;대전광역시&#39;,
+       &#39;강원도&#39;, &#39;세종특별자치시&#39;, &#39;케이맨 제도&#39;, &#39;미국&#39;, &#39;홍콩&#39;, &#39;일본&#39;, &#39;싱가포르&#39;], dtype=object)</pre>
 </div>
 
 </div>
@@ -15806,15 +15496,13 @@ dtype: float64</pre>
 
 </div>
 
-</div><!--
-frame.groupby(level=1).sum()
---><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">frame</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="s1">&#39;color&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">지역</span> <span class="o">==</span> <span class="s1">&#39;광주광역시&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -15826,19 +15514,6 @@ frame.groupby(level=1).sum()
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>C:\Users\Public\Documents\ESTsoft\CreatorTemp/ipykernel_736/4133796543.py:1: FutureWarning: Using the level keyword in DataFrame and Series aggregations is deprecated and will be removed in a future version. Use groupby instead. df.sum(level=1) should use df.groupby(level=1).sum().
-  frame.sum(level=&#39;color&#39;, axis=1)
-</pre>
-</div>
-</div>
 
 <div class="jp-OutputArea-child">
 
@@ -15866,39 +15541,77 @@ frame.groupby(level=1).sum()
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>color</th>
-      <th>Green</th>
-      <th>Red</th>
-    </tr>
-    <tr>
-      <th>key1</th>
-      <th>key2</th>
-      <th></th>
-      <th></th>
+      <th>회사명</th>
+      <th>종목코드</th>
+      <th>업종</th>
+      <th>주요제품</th>
+      <th>상장일</th>
+      <th>결산월</th>
+      <th>대표자명</th>
+      <th>홈페이지</th>
+      <th>지역</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th rowspan="2" valign="top">a</th>
-      <th>1</th>
-      <td>2</td>
-      <td>1</td>
+      <th>2215</th>
+      <td>우리종금</td>
+      <td>10050</td>
+      <td>기타 금융업</td>
+      <td>종합금융,주택할부금융,부동산</td>
+      <td>1974-09-11</td>
+      <td>12월</td>
+      <td>김종득</td>
+      <td>http://wooriib.com</td>
+      <td>광주광역시</td>
     </tr>
     <tr>
-      <th>2</th>
-      <td>8</td>
-      <td>4</td>
+      <th>2178</th>
+      <td>대유플러스</td>
+      <td>300</td>
+      <td>통신 및 방송 장비 제조업</td>
+      <td>유,무선 통신장비</td>
+      <td>1975-06-09</td>
+      <td>12월</td>
+      <td>박상민</td>
+      <td>http://www.dayouplus.co.kr</td>
+      <td>광주광역시</td>
     </tr>
     <tr>
-      <th rowspan="2" valign="top">b</th>
-      <th>1</th>
-      <td>14</td>
-      <td>7</td>
+      <th>1584</th>
+      <td>대유에이텍</td>
+      <td>2880</td>
+      <td>자동차 신품 부품 제조업</td>
+      <td>자동차부품(자동차용 시트)제조</td>
+      <td>1977-02-18</td>
+      <td>12월</td>
+      <td>권의경</td>
+      <td>http://www.dayouat.co.kr</td>
+      <td>광주광역시</td>
     </tr>
     <tr>
-      <th>2</th>
-      <td>20</td>
-      <td>10</td>
+      <th>1374</th>
+      <td>대신정보통신</td>
+      <td>20180</td>
+      <td>컴퓨터 프로그래밍, 시스템 통합 및 관리업</td>
+      <td>디지털서비스, SI서비스, 산업용 PDA</td>
+      <td>1995-10-06</td>
+      <td>03월</td>
+      <td>이재원, 최현택 (각자 대표이사)</td>
+      <td>http://www.dsic.co.kr</td>
+      <td>광주광역시</td>
+    </tr>
+    <tr>
+      <th>425</th>
+      <td>화천기공</td>
+      <td>850</td>
+      <td>특수 목적용 기계 제조업</td>
+      <td>CNC선반,CNC밀링,연마기(금속공작기계),MC공작기계,COPY밀링기계,주방품 제조,도매</td>
+      <td>1999-11-18</td>
+      <td>12월</td>
+      <td>각자대표이사 권영두, 권영렬</td>
+      <td>http://www.hwacheon.com</td>
+      <td>광주광역시</td>
     </tr>
   </tbody>
 </table>
@@ -15911,133 +15624,18 @@ frame.groupby(level=1).sum()
 
 </div>
 
-</div><!--
-frame.groupby(level='color', axis=1).sum()
--->
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="-Using-a-DataFrame's-columns-"><font color="brown"> Using a DataFrame's columns </font><a class="anchor-link" href="#-Using-a-DataFrame's-columns-">&#182;</a></h3><blockquote><p>DataFrame의 칼럼 사용하기</p>
-<ul>
-<li>DataFrame.set_index 함수 : 하나 이상의 칼럼을 색인으로 하는 새로운 DataFrame을 생성한다.</li>
-<li>DataFrame.reset_index 함수 : 계층적 샌인 단계가 칼럼으로 이동한다.</li>
-</ul>
-</blockquote>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">frame</span> <span class="o">=</span> <span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">),</span> 
-                   <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">),</span>
-                   <span class="s1">&#39;c&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;one&#39;</span><span class="p">,</span> <span class="s1">&#39;one&#39;</span><span class="p">,</span> <span class="s1">&#39;one&#39;</span><span class="p">,</span> <span class="s1">&#39;two&#39;</span><span class="p">,</span> <span class="s1">&#39;two&#39;</span><span class="p">,</span> <span class="s1">&#39;two&#39;</span><span class="p">,</span> <span class="s1">&#39;two&#39;</span><span class="p">],</span>
-                   <span class="s1">&#39;d&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]})</span>
-<span class="n">frame</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mask</span> <span class="o">=</span> <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">지역</span> <span class="o">==</span> <span class="s1">&#39;광주광역시&#39;</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">지역</span> <span class="o">==</span> <span class="s1">&#39;전라북도&#39;</span> <span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">지역</span> <span class="o">==</span> <span class="s1">&#39;전라남도&#39;</span> <span class="p">)</span>
 </pre></div>
 
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>a</th>
-      <th>b</th>
-      <th>c</th>
-      <th>d</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>0</td>
-      <td>7</td>
-      <td>one</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>1</td>
-      <td>6</td>
-      <td>one</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>2</td>
-      <td>5</td>
-      <td>one</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>3</td>
-      <td>4</td>
-      <td>two</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>4</td>
-      <td>3</td>
-      <td>two</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>5</td>
-      <td>2</td>
-      <td>two</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>6</td>
-      <td>1</td>
-      <td>two</td>
-      <td>3</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-</div>
-
-</div>
-
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -16046,8 +15644,8 @@ frame.groupby(level='color', axis=1).sum()
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">frame2</span> <span class="o">=</span> <span class="n">frame</span><span class="o">.</span><span class="n">set_index</span><span class="p">([</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">])</span>
-<span class="n">frame2</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">honam_df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">mask</span><span class="p">]</span>
+<span class="n">honam_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -16086,54 +15684,77 @@ frame.groupby(level='color', axis=1).sum()
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th></th>
-      <th>a</th>
-      <th>b</th>
-    </tr>
-    <tr>
-      <th>c</th>
-      <th>d</th>
-      <th></th>
-      <th></th>
+      <th>회사명</th>
+      <th>종목코드</th>
+      <th>업종</th>
+      <th>주요제품</th>
+      <th>상장일</th>
+      <th>결산월</th>
+      <th>대표자명</th>
+      <th>홈페이지</th>
+      <th>지역</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th rowspan="3" valign="top">one</th>
-      <th>0</th>
-      <td>0</td>
-      <td>7</td>
+      <th>2215</th>
+      <td>우리종금</td>
+      <td>10050</td>
+      <td>기타 금융업</td>
+      <td>종합금융,주택할부금융,부동산</td>
+      <td>1974-09-11</td>
+      <td>12월</td>
+      <td>김종득</td>
+      <td>http://wooriib.com</td>
+      <td>광주광역시</td>
     </tr>
     <tr>
-      <th>1</th>
-      <td>1</td>
-      <td>6</td>
+      <th>2178</th>
+      <td>대유플러스</td>
+      <td>300</td>
+      <td>통신 및 방송 장비 제조업</td>
+      <td>유,무선 통신장비</td>
+      <td>1975-06-09</td>
+      <td>12월</td>
+      <td>박상민</td>
+      <td>http://www.dayouplus.co.kr</td>
+      <td>광주광역시</td>
     </tr>
     <tr>
-      <th>2</th>
-      <td>2</td>
-      <td>5</td>
+      <th>1273</th>
+      <td>백광산업</td>
+      <td>1340</td>
+      <td>기초 화학물질 제조업</td>
+      <td>가성소다,합성염산 제조,판매</td>
+      <td>1976-06-10</td>
+      <td>12월</td>
+      <td>김성훈</td>
+      <td>http://www.pkic.co.kr</td>
+      <td>전라북도</td>
     </tr>
     <tr>
-      <th rowspan="4" valign="top">two</th>
-      <th>0</th>
-      <td>3</td>
-      <td>4</td>
+      <th>1011</th>
+      <td>페이퍼코리아</td>
+      <td>1020</td>
+      <td>펄프, 종이 및 판지 제조업</td>
+      <td>제지(신문용지,중질지),합판 제조,건설,석유류 판매</td>
+      <td>1976-06-26</td>
+      <td>12월</td>
+      <td>권육상</td>
+      <td>http://www.papercorea.co.kr</td>
+      <td>전라북도</td>
     </tr>
     <tr>
-      <th>1</th>
-      <td>4</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>5</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>6</td>
-      <td>1</td>
+      <th>349</th>
+      <td>금호건설</td>
+      <td>2990</td>
+      <td>건물 건설업</td>
+      <td>종합건설/여객운송,관광/부동산 임대,분양</td>
+      <td>1976-06-26</td>
+      <td>12월</td>
+      <td>서재환</td>
+      <td>http://www.kumhoenc.com</td>
+      <td>전라남도</td>
     </tr>
   </tbody>
 </table>
@@ -16152,7 +15773,7 @@ frame.groupby(level='color', axis=1).sum()
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">frame</span><span class="o">.</span><span class="n">set_index</span><span class="p">([</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">],</span> <span class="n">drop</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">honam_df</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -16172,95 +15793,9 @@ frame.groupby(level='color', axis=1).sum()
 
 
 
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th></th>
-      <th>a</th>
-      <th>b</th>
-      <th>c</th>
-      <th>d</th>
-    </tr>
-    <tr>
-      <th>c</th>
-      <th>d</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th rowspan="3" valign="top">one</th>
-      <th>0</th>
-      <td>0</td>
-      <td>7</td>
-      <td>one</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>1</td>
-      <td>6</td>
-      <td>one</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>2</td>
-      <td>5</td>
-      <td>one</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th rowspan="4" valign="top">two</th>
-      <th>0</th>
-      <td>3</td>
-      <td>4</td>
-      <td>two</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>4</td>
-      <td>3</td>
-      <td>two</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>5</td>
-      <td>2</td>
-      <td>two</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>6</td>
-      <td>1</td>
-      <td>two</td>
-      <td>3</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>73</pre>
 </div>
 
 </div>
@@ -16275,7 +15810,8 @@ frame.groupby(level='color', axis=1).sum()
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">frame2</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">honam_corp</span> <span class="o">=</span> <span class="n">honam_df</span><span class="p">[[</span><span class="s1">&#39;회사명&#39;</span><span class="p">,</span> <span class="s1">&#39;종목코드&#39;</span><span class="p">]]</span>
+<span class="n">honam_corp</span>
 </pre></div>
 
      </div>
@@ -16314,64 +15850,811 @@ frame.groupby(level='color', axis=1).sum()
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>c</th>
-      <th>d</th>
-      <th>a</th>
-      <th>b</th>
+      <th>회사명</th>
+      <th>종목코드</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
-      <td>one</td>
-      <td>0</td>
-      <td>0</td>
-      <td>7</td>
+      <th>2215</th>
+      <td>우리종금</td>
+      <td>10050</td>
     </tr>
     <tr>
-      <th>1</th>
-      <td>one</td>
-      <td>1</td>
-      <td>1</td>
-      <td>6</td>
+      <th>2178</th>
+      <td>대유플러스</td>
+      <td>300</td>
     </tr>
     <tr>
-      <th>2</th>
-      <td>one</td>
-      <td>2</td>
-      <td>2</td>
-      <td>5</td>
+      <th>1273</th>
+      <td>백광산업</td>
+      <td>1340</td>
     </tr>
     <tr>
-      <th>3</th>
-      <td>two</td>
-      <td>0</td>
-      <td>3</td>
-      <td>4</td>
+      <th>1011</th>
+      <td>페이퍼코리아</td>
+      <td>1020</td>
     </tr>
     <tr>
-      <th>4</th>
-      <td>two</td>
-      <td>1</td>
-      <td>4</td>
-      <td>3</td>
+      <th>349</th>
+      <td>금호건설</td>
+      <td>2990</td>
     </tr>
     <tr>
-      <th>5</th>
-      <td>two</td>
-      <td>2</td>
-      <td>5</td>
-      <td>2</td>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
-      <th>6</th>
-      <td>two</td>
-      <td>3</td>
-      <td>6</td>
-      <td>1</td>
+      <th>33</th>
+      <td>두산퓨얼셀</td>
+      <td>336260</td>
+    </tr>
+    <tr>
+      <th>1832</th>
+      <td>피피아이</td>
+      <td>62970</td>
+    </tr>
+    <tr>
+      <th>787</th>
+      <td>박셀바이오</td>
+      <td>323990</td>
+    </tr>
+    <tr>
+      <th>2009</th>
+      <td>비나텍</td>
+      <td>126340</td>
+    </tr>
+    <tr>
+      <th>2228</th>
+      <td>일진하이솔루스</td>
+      <td>271940</td>
     </tr>
   </tbody>
 </table>
+<p>73 rows × 2 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">honam_corp</span> <span class="o">=</span> <span class="n">honam_corp</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;회사명&#39;</span><span class="p">:</span> <span class="s1">&#39;Corp.Honam&#39;</span><span class="p">,</span> <span class="s1">&#39;종목코드&#39;</span><span class="p">:</span> <span class="s1">&#39;Code.KS&#39;</span><span class="p">})</span>
+<span class="n">honam_corp</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Corp.Honam</th>
+      <th>Code.KS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2215</th>
+      <td>우리종금</td>
+      <td>10050</td>
+    </tr>
+    <tr>
+      <th>2178</th>
+      <td>대유플러스</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <th>1273</th>
+      <td>백광산업</td>
+      <td>1340</td>
+    </tr>
+    <tr>
+      <th>1011</th>
+      <td>페이퍼코리아</td>
+      <td>1020</td>
+    </tr>
+    <tr>
+      <th>349</th>
+      <td>금호건설</td>
+      <td>2990</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><!--
+df = df[['회사명', '종목코드']]
+df.head()
+
+df = df.rename(columns={'회사명': 'name', '종목코드': 'code'})
+df.head()
+--><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="Pandas-Data-Reader%EB%A5%BC-%ED%86%B5%ED%95%B4%EC%84%9C-Yahoo-Finace%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0%EC%9C%84%ED%95%B4%EC%84%9C%EB%8A%94-%EB%91%90-%EA%B0%80%EC%A7%80-%EB%B0%A9%EB%B2%95%EC%9D%B4-%EC%A1%B4%EC%9E%AC">Pandas Data Reader&#47484; &#53685;&#54644;&#49436; Yahoo Finace&#51032; &#45936;&#51060;&#53552;&#47484; &#44032;&#51256;&#50724;&#44592;&#50948;&#54644;&#49436;&#45716; &#46160; &#44032;&#51648; &#48169;&#48277;&#51060; &#51316;&#51116;<a class="anchor-link" href="#Pandas-Data-Reader%EB%A5%BC-%ED%86%B5%ED%95%B4%EC%84%9C-Yahoo-Finace%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0%EC%9C%84%ED%95%B4%EC%84%9C%EB%8A%94-%EB%91%90-%EA%B0%80%EC%A7%80-%EB%B0%A9%EB%B2%95%EC%9D%B4-%EC%A1%B4%EC%9E%AC">&#182;</a></h4><blockquote><ul>
+<li>방법1 : DataReader API를 통해서 yahoo finance의 주식 종목 데이터를 가져온다.</li>
+<li>방법2 : get_data_yahoo API를 통해서 yahho finance의 주식 종목 데이터를 가져온다.</li>
+</ul>
+</blockquote>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># import pandas.io.data as web</span>
+<span class="kn">import</span> <span class="nn">pandas_datareader</span> <span class="k">as</span> <span class="nn">web</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">web</span><span class="o">.</span><span class="n">get_data_yahoo</span><span class="p">(</span><span class="s1">&#39;YOJ.SG&#39;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[33]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>High</th>
+      <th>Low</th>
+      <th>Open</th>
+      <th>Close</th>
+      <th>Volume</th>
+      <th>Adj Close</th>
+    </tr>
+    <tr>
+      <th>Date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2017-05-31</th>
+      <td>4.0000</td>
+      <td>4.0000</td>
+      <td>4.0000</td>
+      <td>4.0000</td>
+      <td>0.0</td>
+      <td>9.376454</td>
+    </tr>
+    <tr>
+      <th>2017-06-01</th>
+      <td>3.9520</td>
+      <td>3.9520</td>
+      <td>3.9520</td>
+      <td>3.9520</td>
+      <td>0.0</td>
+      <td>9.263937</td>
+    </tr>
+    <tr>
+      <th>2017-06-02</th>
+      <td>3.9130</td>
+      <td>3.9130</td>
+      <td>3.9130</td>
+      <td>3.9130</td>
+      <td>0.0</td>
+      <td>9.172517</td>
+    </tr>
+    <tr>
+      <th>2017-06-05</th>
+      <td>3.9130</td>
+      <td>3.9130</td>
+      <td>3.9130</td>
+      <td>3.9130</td>
+      <td>0.0</td>
+      <td>9.172517</td>
+    </tr>
+    <tr>
+      <th>2017-06-06</th>
+      <td>3.9320</td>
+      <td>3.9250</td>
+      <td>3.9250</td>
+      <td>3.9320</td>
+      <td>0.0</td>
+      <td>9.217055</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>2022-05-24</th>
+      <td>3.0780</td>
+      <td>3.0780</td>
+      <td>3.0780</td>
+      <td>3.0780</td>
+      <td>0.0</td>
+      <td>3.078000</td>
+    </tr>
+    <tr>
+      <th>2022-05-25</th>
+      <td>3.0230</td>
+      <td>3.0230</td>
+      <td>3.0230</td>
+      <td>3.0230</td>
+      <td>0.0</td>
+      <td>3.023000</td>
+    </tr>
+    <tr>
+      <th>2022-05-26</th>
+      <td>3.0355</td>
+      <td>3.0355</td>
+      <td>3.0355</td>
+      <td>3.0355</td>
+      <td>0.0</td>
+      <td>3.035500</td>
+    </tr>
+    <tr>
+      <th>2022-05-27</th>
+      <td>2.9925</td>
+      <td>2.9925</td>
+      <td>2.9925</td>
+      <td>2.9925</td>
+      <td>0.0</td>
+      <td>2.992500</td>
+    </tr>
+    <tr>
+      <th>2022-05-30</th>
+      <td>3.0640</td>
+      <td>3.0640</td>
+      <td>3.0640</td>
+      <td>3.0640</td>
+      <td>0.0</td>
+      <td>3.064000</td>
+    </tr>
+  </tbody>
+</table>
+<p>1267 rows × 6 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 방법1 </span>
+<span class="c1"># df = web.DataReader(&#39;주식 종목코드&#39;)</span>
+<span class="c1"># df = web.DataReader(&#39;AAPL&#39;)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">web</span><span class="o">.</span><span class="n">get_data_yahoo</span><span class="p">(</span><span class="s1">&#39;YOJ.SG&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[34]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>High</th>
+      <th>Low</th>
+      <th>Open</th>
+      <th>Close</th>
+      <th>Volume</th>
+      <th>Adj Close</th>
+    </tr>
+    <tr>
+      <th>Date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2017-05-31</th>
+      <td>4.000</td>
+      <td>4.000</td>
+      <td>4.000</td>
+      <td>4.000</td>
+      <td>0.0</td>
+      <td>9.376455</td>
+    </tr>
+    <tr>
+      <th>2017-06-01</th>
+      <td>3.952</td>
+      <td>3.952</td>
+      <td>3.952</td>
+      <td>3.952</td>
+      <td>0.0</td>
+      <td>9.263937</td>
+    </tr>
+    <tr>
+      <th>2017-06-02</th>
+      <td>3.913</td>
+      <td>3.913</td>
+      <td>3.913</td>
+      <td>3.913</td>
+      <td>0.0</td>
+      <td>9.172518</td>
+    </tr>
+    <tr>
+      <th>2017-06-05</th>
+      <td>3.913</td>
+      <td>3.913</td>
+      <td>3.913</td>
+      <td>3.913</td>
+      <td>0.0</td>
+      <td>9.172518</td>
+    </tr>
+    <tr>
+      <th>2017-06-06</th>
+      <td>3.932</td>
+      <td>3.925</td>
+      <td>3.925</td>
+      <td>3.932</td>
+      <td>0.0</td>
+      <td>9.217054</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 방법2 : 기간정보(yyyy-mm-dd)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">web</span><span class="o">.</span><span class="n">get_data_yahoo</span><span class="p">(</span><span class="s1">&#39;035720.KS&#39;</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="s1">&#39;2020-01-01&#39;</span><span class="p">)</span>    <span class="c1"># 카카오. 035720</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[35]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>High</th>
+      <th>Low</th>
+      <th>Open</th>
+      <th>Close</th>
+      <th>Volume</th>
+      <th>Adj Close</th>
+    </tr>
+    <tr>
+      <th>Date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2020-01-02</th>
+      <td>31127.228516</td>
+      <td>30623.552734</td>
+      <td>31026.494141</td>
+      <td>30724.287109</td>
+      <td>1196436.0</td>
+      <td>30697.591797</td>
+    </tr>
+    <tr>
+      <th>2020-01-03</th>
+      <td>31227.964844</td>
+      <td>30422.082031</td>
+      <td>30925.757812</td>
+      <td>30724.287109</td>
+      <td>1562748.0</td>
+      <td>30697.591797</td>
+    </tr>
+    <tr>
+      <th>2020-01-06</th>
+      <td>31227.964844</td>
+      <td>30220.611328</td>
+      <td>30321.345703</td>
+      <td>31127.228516</td>
+      <td>1954204.0</td>
+      <td>31100.181641</td>
+    </tr>
+    <tr>
+      <th>2020-01-07</th>
+      <td>32235.318359</td>
+      <td>31127.228516</td>
+      <td>31227.964844</td>
+      <td>32235.318359</td>
+      <td>4170263.0</td>
+      <td>32207.308594</td>
+    </tr>
+    <tr>
+      <th>2020-01-08</th>
+      <td>32638.259766</td>
+      <td>31530.169922</td>
+      <td>31933.111328</td>
+      <td>32134.582031</td>
+      <td>4227010.0</td>
+      <td>32106.660156</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 방법3 : 기간정보(datetime)</span>
+<span class="n">start</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2022</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">end</span>   <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2022</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">31</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">web</span><span class="o">.</span><span class="n">get_data_yahoo</span><span class="p">(</span><span class="s1">&#39;005930.KS&#39;</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">)</span>   <span class="c1"># 삼성전자. 005930</span>
+<span class="n">df</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[37]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>High</th>
+      <th>Low</th>
+      <th>Open</th>
+      <th>Close</th>
+      <th>Volume</th>
+      <th>Adj Close</th>
+    </tr>
+    <tr>
+      <th>Date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2022-01-04</th>
+      <td>79200.0</td>
+      <td>78300.0</td>
+      <td>78800.0</td>
+      <td>78700.0</td>
+      <td>12427416.0</td>
+      <td>78295.289062</td>
+    </tr>
+    <tr>
+      <th>2022-01-05</th>
+      <td>79000.0</td>
+      <td>76400.0</td>
+      <td>78800.0</td>
+      <td>77400.0</td>
+      <td>25470640.0</td>
+      <td>77001.976562</td>
+    </tr>
+    <tr>
+      <th>2022-01-06</th>
+      <td>77600.0</td>
+      <td>76600.0</td>
+      <td>76700.0</td>
+      <td>76900.0</td>
+      <td>12931954.0</td>
+      <td>76504.546875</td>
+    </tr>
+    <tr>
+      <th>2022-01-07</th>
+      <td>78400.0</td>
+      <td>77400.0</td>
+      <td>78100.0</td>
+      <td>78300.0</td>
+      <td>15163757.0</td>
+      <td>77897.343750</td>
+    </tr>
+    <tr>
+      <th>2022-01-10</th>
+      <td>78100.0</td>
+      <td>77100.0</td>
+      <td>78100.0</td>
+      <td>78000.0</td>
+      <td>9947422.0</td>
+      <td>77598.890625</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>2022-05-24</th>
+      <td>67700.0</td>
+      <td>66500.0</td>
+      <td>67500.0</td>
+      <td>66500.0</td>
+      <td>15482576.0</td>
+      <td>66500.000000</td>
+    </tr>
+    <tr>
+      <th>2022-05-25</th>
+      <td>67100.0</td>
+      <td>65900.0</td>
+      <td>66700.0</td>
+      <td>66400.0</td>
+      <td>15150490.0</td>
+      <td>66400.000000</td>
+    </tr>
+    <tr>
+      <th>2022-05-26</th>
+      <td>67200.0</td>
+      <td>65500.0</td>
+      <td>66300.0</td>
+      <td>65900.0</td>
+      <td>15970890.0</td>
+      <td>65900.000000</td>
+    </tr>
+    <tr>
+      <th>2022-05-27</th>
+      <td>66900.0</td>
+      <td>66200.0</td>
+      <td>66700.0</td>
+      <td>66500.0</td>
+      <td>11405555.0</td>
+      <td>66500.000000</td>
+    </tr>
+    <tr>
+      <th>2022-05-30</th>
+      <td>67800.0</td>
+      <td>66900.0</td>
+      <td>67500.0</td>
+      <td>67700.0</td>
+      <td>14024265.0</td>
+      <td>67700.000000</td>
+    </tr>
+  </tbody>
+</table>
+<p>98 rows × 6 columns</p>
 </div>
 </div>
 
