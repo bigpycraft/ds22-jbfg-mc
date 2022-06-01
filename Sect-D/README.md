@@ -30,8 +30,6 @@
 > - [ 1) Basic Operation, Shape Manipulation     ][B4150]
 > - [ 2) Advanced indexing and index tricks      ][B4160]
 
-
-
 #### 5. Pandas 
 
 > 5-1. Pandas Basics 
@@ -48,7 +46,29 @@
 > - [ 3) Plotting, Getting Data In/Out                     ][B4293]
 
 
+#### 6. Visualizing Data
+
+> 6-1. MatplotLib Style
+> - [MatplotLib Practice                         ][B4300]
+> - [ 1) Chart Graph                             ][B4301]
+> - [ 2) Color Style                             ][B4302]
+> - [ 3) Annotattion                             ][B4303]
+> 
+> 6-2. Seaborn Style
+> - [ Seaborn Practice                           ][B4304]
+> - [ 1) boxplot, swarmplot, FacetGrid, lmplot   ][B4304]
+> - [ 2) kdeplot, distplot, violinplot, heatmap  ][B4304]
+> - [ 3) pairplot, jointplot, tsplot             ][B4304]
+>
+> 6-3. Mission.
+> - [ Quiz. Drawing Basic Chart of Naver Movie          ][B4305]
+
+
+
+
 <!--
+#### 4. Numpy 
+
 > 4-1. Numpy Basics 
 > <br/> (1) [ NumPy ndarray, Slicing & Indexing       ][B4110]
 > <br/> (2) [ Universal Functions, Data processing    ][B4120]
@@ -103,6 +123,7 @@
 [B4110]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B411_NumPy_Basics1.html               "Go B4110"
 [B4120]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B412_NumPy_Basics2.html               "Go B4120"
 [B4130]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B413_NumPy_Basics3.html               "Go B4130"
+
 [B4150]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B415_NumPy_Practice1.html             "Go B4150"
 [B4160]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B416_NumPy_Practice2.html             "Go B4160"
 
@@ -116,6 +137,13 @@
 [B4291]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B429_Pandas_Practice1.html            "Go B4291"
 [B4292]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B429_Pandas_Practice2.html            "Go B4292"
 [B4293]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B429_Pandas_Practice3.html            "Go B4293"
+
+[B4300]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B430_Matplotlib.html                  "Go B4300"
+[B4301]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B431_Matplotlib_Basic_Chart.html      "Go B4301"
+[B4302]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B432_Matplotlib_Color_Style.html      "Go B4302"
+[B4303]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B433_Matplotlib_Annotattion.html      "Go B4303"
+[B4304]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B434_Matplotlib_Seaborn_ver2.html     "Go B4304"
+[B4305]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B435_Matplotlib__Quiz_mission.html    "Go B4305"
 
 
 [A1010]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_A101_Review_DataType.html                      "Go A1010"
