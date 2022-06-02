@@ -61,8 +61,20 @@
 > - [ 3) pairplot, jointplot, tsplot             ][B4304]
 >
 > 6-3. Mission.
-> - [ Quiz. Drawing Basic Chart of Naver Movie          ][B4305]
-
+> - Visualization Mission
+> </br>  - [ Quiz. Drawing Basic Chart of Naver Movie  ][B4305]
+> - Submission Code
+> </br> - [ Q01_김은민 ][Q4305-01]
+> </br> - [ Q02_최대훈 ][Q4305-02]
+> </br> - [ Q03_김영목 ][Q4305-03]
+> </br> - [ Q04_박성실 ][Q4305-04]
+> </br> - [ Q05_정은지 ][Q4305-05]
+> </br> - [ Q06_박동현 ][Q4305-06]
+> </br> - [ Q07_박요온 ][Q4305-07]
+> </br> - [ Q08_오승현 ][Q4305-08]
+> </br> - [ Q09_한혜형 ][Q4305-09]
+> </br> - [ Q09_한혜형 ][Q4305-09]
+> </br> - [ Q10_이건호 ][Q4305-10]
 
 
 
@@ -144,6 +156,20 @@
 [B4303]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B433_Matplotlib_Annotattion.html      "Go B4303"
 [B4304]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B434_Matplotlib_Seaborn_ver2.html     "Go B4304"
 [B4305]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_B435_Matplotlib__Quiz_mission.html    "Go B4305"
+[Q4305]:  https://github.com/bigpycraft/ds22-jbfg-mc/tree/main/Sect-D/quiz                                                                              "Go Q4305"
+[Q4305-01]:  https://github.com/bigpycraft/ds22-jbfg-mc/tree/main/Sect-D/quiz/Q01_김은민_영화평점차트.ipynb                                             "Go Q4305-01"
+[Q4305-02]:  https://github.com/bigpycraft/ds22-jbfg-mc/tree/main/Sect-D/quiz/Q02_최대훈_영화평점차트.ipynb                                             "Go Q4305-02"
+[Q4305-03]:  https://github.com/bigpycraft/ds22-jbfg-mc/tree/main/Sect-D/quiz/Q03_김영목_영화평점차트.ipynb                                             "Go Q4305-03"
+[Q4305-04]:  https://github.com/bigpycraft/ds22-jbfg-mc/tree/main/Sect-D/quiz/Q04_박성실_영화평점차트.ipynb                                             "Go Q4305-04"
+[Q4305-05]:  https://github.com/bigpycraft/ds22-jbfg-mc/tree/main/Sect-D/quiz/Q05_정은지_영화평점차트.ipynb                                             "Go Q4305-05"
+[Q4305-06]:  https://github.com/bigpycraft/ds22-jbfg-mc/tree/main/Sect-D/quiz/Q06_박동현_영화평점차트.ipynb                                             "Go Q4305-06"
+[Q4305-07]:  https://github.com/bigpycraft/ds22-jbfg-mc/tree/main/Sect-D/quiz/Q07_박요온_영화평점차트.ipynb                                             "Go Q4305-07"
+[Q4305-08]:  https://github.com/bigpycraft/ds22-jbfg-mc/tree/main/Sect-D/quiz/Q08_오승현_영화평점차트.ipynb                                             "Go Q4305-08"
+[Q4305-09]:  https://github.com/bigpycraft/ds22-jbfg-mc/tree/main/Sect-D/quiz/Q09_한혜형_영화평점차트_v2.ipynb                                          "Go Q4305-09"
+[Q4305-10]:  https://github.com/bigpycraft/ds22-jbfg-mc/tree/main/Sect-D/quiz/Q10_이건호_영화평점차트.ipynb                                             "Go Q4305-10"
+
+
+
 
 
 [A1010]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_A101_Review_DataType.html                      "Go A1010"
