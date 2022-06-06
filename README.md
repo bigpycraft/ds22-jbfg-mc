@@ -48,7 +48,7 @@
 [Proj-1]: ./Team-Project/pilot_project_1st/   "Go Proj-1"
 [Proj-2]: ./Team-Project/pilot_project_2nd/   "Go Proj-2"
 
-<hr>
+<hr> 
 
 ## Python Develop Environment
 
