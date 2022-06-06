@@ -29,12 +29,7 @@
 > 7-2. Public Data Analysis 
 > - [ 1) Public Data Potal 1                     ][D5310]
 > - [ 2) Public Data Potal 2                     ][D5320]
-> - [ Public Mission - 1 Page Report             ][Q5331]
-> 
-> 7-3. Geo Data Analysis 
-> - [ 1) Folium for Map                          ][D5600]
-> - [ 2) Seoul Population Statistics             ][D5610]
-> - [ 3) Get Geo Location(Latitude/Longitude)    ][D5350]
+> - [ Public Mission - 1 Page Report             ][Q5330]
 
 
 [Ready]:  #    "Getting Ready"
@@ -46,12 +41,7 @@
 [D5310]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_D531_DataGoKr_노화빌딩_ver3.html              "Go D5310"
 [D5320]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_D532_DataGoKr_범죄발생2020.html               "Go D5320"
 [Q5330]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_D533_DataGoKr_CCTV현황_Mission.html           "Go Q5330"
-[Q5331]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_D533_DataGoKr_CCTV현황_ver1.html              "Go Q5332"
-[D5332]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_D533_DataGoKr_CCTV현황_ver2.html              "Go D5332"
-[D5350]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_D535_DataGoKr_주소위치.html                   "Go D5350"
-
-[D5600]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_D560_Folium_for_Map_ver4.html                 "Go D5600"
-[D5610]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_D561_OpenGov_Seoul_Population_2022_2Q.html    "Go D5610"
+[D5330]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_D533_DataGoKr_CCTV현황_ver2.html              "Go D5330"
 
 
 
