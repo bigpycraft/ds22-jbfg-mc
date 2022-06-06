@@ -1,0 +1,11 @@
+1. Title: 은행 상품가입 Database
+
+2. Sources:
+     (a) Creator: 최대훈
+     (b) Date: 06/06/2022
+
+3. Attribute Information:
+   1. 성별
+   2. 상품종류
+   3. 가입경로
+   4. 가입금액

@@ -29,9 +29,14 @@
 - [Python Programming Basics             ][Sect-A]
 - [Jupyter Notebook Practice             ][Sect-B]
 - [Python Packages and Modules           ][Sect-C]
-- [Team Project 1st - Golf Score Mgr     ][Proj-1]
 - [Essential Packages for Data Analysis  ][Sect-D]
 - [Data Processing and Analysis          ][Sect-E]
+
+<hr>
+
+## Team Project
+- [Pilot Project 1st - Golf Score Mgr    ][Proj-1]
+- [Pilot Project 2nd - Fin.Data Analysis ][Proj-2]
 
 
 [Sect-A]: ./Sect-A/                  "Go Sect-A"
@@ -41,6 +46,7 @@
 [Sect-E]: ./Sect-E/                  "Go Sect-E"
 
 [Proj-1]: ./Team-Project/pilot_project_1st/   "Go Proj-1"
+[Proj-2]: ./Team-Project/pilot_project_2nd/   "Go Proj-2"
 
 <hr>
 
