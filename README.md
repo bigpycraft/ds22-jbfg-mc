@@ -31,6 +31,7 @@
 - [Python Packages and Modules           ][Sect-C]
 - [Essential Packages for Data Analysis  ][Sect-D]
 - [Data Processing and Analysis          ][Sect-E]
+- [Data Collecting and Web Cralwling     ][Sect-F]
 
 <hr>
 
@@ -44,6 +45,7 @@
 [Sect-C]: ./Sect-C/                  "Go Sect-C"
 [Sect-D]: ./Sect-D/                  "Go Sect-D"
 [Sect-E]: ./Sect-E/                  "Go Sect-E"
+[Sect-F]: ./Sect-F/                  "Go Sect-F"
 
 [Proj-1]: ./Team-Project/pilot_project_1st/   "Go Proj-1"
 [Proj-2]: ./Team-Project/pilot_project_2nd/   "Go Proj-2"
