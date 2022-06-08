@@ -140,7 +140,7 @@
     <br/><br/>
     <b> 3. Microsoft WebDriver </b> : <a href='https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/'>[다운로드]</a>
     <br/><br/>
-    <b> cf. 가장 보편적으로 많이 사용하는 크롬 웹드라이브를 다운받아서 설치한다. </b>
+    <b> ※ 가장 보편적으로 많이 사용하는 크롬 웹드라이브를 다운받아서 설치한다. </b>
 </div>
         </td>
     </tr>
