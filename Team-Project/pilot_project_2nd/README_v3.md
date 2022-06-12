@@ -67,6 +67,8 @@
 	</tr>
 </table>
 </div>
+<br/>
+<img src="./images/sayings_01.png">
 
 <hr>
 <marquee><font size=3 color='brown'>The BigpyCraft find the information to design valuable society with Technology & Craft.</font></marquee>
