@@ -32,6 +32,7 @@
 - [Essential Packages for Data Analysis  ][Sect-D]
 - [Data Processing and Analysis          ][Sect-E]
 - [Data Collecting and Web Cralwling     ][Sect-F]
+- [Korean Natural Language Processing    ][Sect-G]
 
 <hr>
 
@@ -46,6 +47,7 @@
 [Sect-D]: ./Sect-D/                  "Go Sect-D"
 [Sect-E]: ./Sect-E/                  "Go Sect-E"
 [Sect-F]: ./Sect-F/                  "Go Sect-F"
+[Sect-G]: ./Sect-G/                  "Go Sect-G"
 
 [Proj-1]: ./Team-Project/pilot_project_1st/   "Go Proj-1"
 [Proj-2]: ./Team-Project/pilot_project_2nd/   "Go Proj-2"
