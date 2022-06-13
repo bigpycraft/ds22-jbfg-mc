@@ -49,7 +49,7 @@
 > - [ 3) Selenium & Webdriver Practice            ][E6501]
 
 > - [ Mission 3                                   ][E6510]
-> - [ 4) Comprehensive Practice Set               ][E6510]
+> - [ 4) Comprehensive Practice Set               ][E6512]
 
 
 [Ready]:  #    "Getting Ready"  
