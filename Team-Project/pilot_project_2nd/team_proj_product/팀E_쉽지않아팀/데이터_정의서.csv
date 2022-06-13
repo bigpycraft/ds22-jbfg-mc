@@ -1,0 +1,9 @@
+컬럼명,컬럼의미
+Cstno,고객번호
+Age,나이
+Sex,성별
+Use_Month,카드사용기간(월)
+Income,수입(소유자의 연간 소득 범주)
+Credit_Limit,카드한도(원)
+Total_Trans_Amt,"총 거래 금액(지난 12개월, 원)"
+Total_Trans_Ct,총 거래 건수(지난 12개월)
