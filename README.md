@@ -186,7 +186,8 @@
 <div align="left">
     <b> 1. JAVA 환경 </b> : <a href="https://www.oracle.com/technetwork/java/javase/downloads/">JDK (>=1.8)</a> Install & JAVA Environmnmet Variable Setting
     <br/><br/>
-    <b> 2. MS Visual C++ 설치 </b> : <a href="https://www.scivision.co/python-windows-visual-c++-14-required/">Build Tools for Visual Studio 2017 (>=14.0) </a> Install 
+    <b> 2. MS Visual C++ 설치 </b> : <a href='https://visualstudio.microsoft.com/ko/visual-cpp-build-tools/'>[다운로드1]</a>, &nbsp;&nbsp;&nbsp;<a href="https://www.scivision.co/python-windows-visual-c++-14-required/">[다운로드2]</a> 
+    <br/> &nbsp;&nbsp; - 최소사양 : Build Tools for Visual Studio 2017 (>=14.0) Install
     <br/><br/>
     <b> 3. JPype 설치 </b> : <a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/#jpype">JPype1  (>=0.5.7) </a>Install
     <br/> &nbsp;&nbsp; (Anaconda Prompt) C:\Users\user> <b> pip install --upgrade pip </b>
