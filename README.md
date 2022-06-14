@@ -39,6 +39,8 @@
 ## Team Project
 - [Pilot Project 1st - Golf Score Mgr    ][Proj-1]
 - [Pilot Project 2nd - Fin.Data Analysis ][Proj-2]
+- [Final Project 3nd - Solve the Problem ][Proj-3]
+- [데이터분석 프로젝트 - Guide ][P-guide]
 
 
 [Sect-A]: ./Sect-A/                  "Go Sect-A"
@@ -51,6 +53,8 @@
 
 [Proj-1]: ./Team-Project/pilot_project_1st/   "Go Proj-1"
 [Proj-2]: ./Team-Project/pilot_project_2nd/   "Go Proj-2"
+[Proj-3]: ./Team-Project/final_project_3rd/   "Go Proj-3" 
+[P-guide]: ./Team-Project/DS100_데이터분석_프로젝트_Guide_ver1.pdf   "Go P-guide" 
 
 <hr> 
 
