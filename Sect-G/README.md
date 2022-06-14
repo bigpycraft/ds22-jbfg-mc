@@ -37,12 +37,20 @@
 > - [ 1) Image Masking WordCloud - USA Constitution       ][F7610]
 > - [ 2) Image Masking WordCloud - USA Alice Story        ][F7620]
 > - [ 3) Image Masking WordCloud - KOR Constitution       ][F7700]
+> <br/><br/>
+> 9-4. Mission : Crawling & Img-Masking WordCloud
+> - [ 1) M01_김은민_금리인상              ][WC_M01]
+> - [ 2) M02_김영목_송해선생님            ][WC_M02]
+> - [ 3) M03_최대훈_박P취임사             ][WC_M03]
+> - [ 4) M04_한혜형_청와대역사            ][WC_M04]
+> - [ 5) M05_박성실_은행특판              ][WC_M05]
+> - [ 6) M06_이건호_DJ취임사              ][WC_M06]
+> - [ 7) M07_정은지_경제기사헤드라인      ][WC_M07]
+> - [ 8) M08_박요온_정당별강령            ][WC_M08]
 
 
 
 [Ready]:  #    "Getting Ready"  
-
-
 
 [F7110]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_F711_NLP_KoNLPy_Module_ver5.html                "Go F7110"
 [F7120]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_F712_NLP_KoNLPy_Module_ver5.html                "Go F7120"
@@ -56,6 +64,16 @@
 [F7610]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_F761_NLP_WordCloud_USA_constitution_code.html   "Go F7610"
 [F7620]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_F762_NLP_WordCloud_USA_alice_story_code.html    "Go F7620"
 [F7700]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/html/BPC_F770_WordCloud_이미지마스킹_v3_code.html        "Go F7700"
+
+[WC_M01]:  ./mission/M01_김은민_금리인상.ipynb                    "Go WC_M01"
+[WC_M02]:  ./mission/M02_김영목_송해선생님.ipynb                  "Go WC_M02"
+[WC_M03]:  ./mission/M03_최대훈_박P취임사.ipynb                   "Go WC_M03"
+[WC_M04]:  ./mission/M04_한혜형_청와대역사.ipynb                  "Go WC_M04"
+[WC_M05]:  ./mission/M05_박성실_은행특판.ipynb                    "Go WC_M05"
+[WC_M06]:  ./mission/M06_이건호_DJ취임사.ipynb                    "Go WC_M06"
+[WC_M07]:  ./mission/M07_정은지_경제기사헤드라인.ipynb            "Go WC_M07"
+[WC_M08]:  ./mission/M08_박요온_정당별강령.ipynb                  "Go WC_M08"
+
 
 
 
