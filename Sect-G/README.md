@@ -47,6 +47,7 @@
 > - [ 6) M06_이건호_DJ취임사              ][WC_M06]
 > - [ 7) M07_정은지_경제기사헤드라인      ][WC_M07]
 > - [ 8) M08_박요온_정당별강령            ][WC_M08]
+> - [ 9) M09_오승현_미통화정책과금리      ][WC_M09]
 
 
 
@@ -73,6 +74,7 @@
 [WC_M06]:  ./mission/M06_이건호_DJ취임사.ipynb                    "Go WC_M06"
 [WC_M07]:  ./mission/M07_정은지_경제기사헤드라인.ipynb            "Go WC_M07"
 [WC_M08]:  ./mission/M08_박요온_정당별강령.ipynb                  "Go WC_M08"
+[WC_M09]:  ./mission/M09_오승현_미통화정책과금리.ipynb            "Go WC_M09"
 
 
 
