@@ -33,6 +33,7 @@
 - [Data Processing and Analysis          ][Sect-E]
 - [Data Collecting and Web Cralwling     ][Sect-F]
 - [Korean Natural Language Processing    ][Sect-G]
+- [특강 - Database and SQL               ][Sect-H]
 
 <hr>
 
@@ -50,6 +51,7 @@
 [Sect-E]: ./Sect-E/                  "Go Sect-E"
 [Sect-F]: ./Sect-F/                  "Go Sect-F"
 [Sect-G]: ./Sect-G/                  "Go Sect-G"
+[Sect-H]: ./Sect-H/                  "Go Sect-H"
 
 [Proj-1]: ./Team-Project/pilot_project_1st/   "Go Proj-1"
 [Proj-2]: ./Team-Project/pilot_project_2nd/   "Go Proj-2"
