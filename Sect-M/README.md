@@ -26,33 +26,30 @@
 ### <font color='#00AAAA'>Special Lecture On Artificial Intelligence </font>
 
 - SP1. [인공지능발 4차산업혁명   ][SP10]
-- SP2. [인공지능 기술 이해      ][SP20]
-<br/><br/>
-
+- SP2. [인공지능 기술 이해       ][SP20]
 
 ### <font color='#00AAAA'>Practice Code</font>
-
 - AI 1-0. [TensorFlow Programming Model Introdue     ][ML1010]
 - AI 1-1. [TensorFlow Overview : Basics operations   ][ML1020]
 - AI 1-2. [Linear Regression                         ][ML1030]
 - AI 1-3. [Minimizing Cost                           ][ML1040]
 - AI 1-4. [Multi-Variable linear regression          ][ML1050]
 <br/><br/>
-
 - AI 2-1. [Logistic classifier                       ][ML2010]
 - AI 2-2. [Softmax Classifier                        ][ML2020]
-
+<br/><br/>
 
 ### <font color='#00AAAA'>Appendix</font>
 
 - AI핵심기술1. [CNN, Convolutional Neural Networks ][SP31] <br/>
 - AI핵심기술2. [RNN, Recurrent Neural Networks     ][SP32] <br/>
 
-<br/><br/>
+### <font color='#00AAAA'>Practice Code</font>
 
 - AI 3-1. [Convolution Neural Network                ][ML6200]
 - AI 3-2. [RNN Long Sentence                         ][ML7240]
 - AI 3-3. [RNN Prediction                            ][ML7250]
+
 
 
 
