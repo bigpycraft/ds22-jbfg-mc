@@ -50,7 +50,7 @@
 <table border=1 width=100%>
 	<tr>
 		<td width="25%"><div align="center"><b>Project Team</b></div></td>
-		<td width="75%"><div align="left" > 선릉파이터 팀</div></td>
+		<td width="75%"><div align="left" > 선릉파이터 팀 (전북은행)</div></td>
 	</tr>
 	<tr>
 		<td><div align="center"><b>Team Members</b></div></td>

@@ -16,7 +16,6 @@
 
 - 프로젝트 미션 : 문제해결을 위한 데이터분석 프로젝트
 - 프로젝트 목표 : 데이터수집에서 최종분석보고서 작성까지 협업을 통한 프로젝트 수행
-- Keep in Mind : Learning by doing, doing by learning !!
 
 ## <font color='#00AAAA'>프로젝트 일정</font>
 
@@ -38,9 +37,88 @@
 [Proj-03]: ./S100_착수보고서_OOO팀.docx                  "Go Proj-03" 
 
 
-<br/>
-
-
 <hr>
+
+##  <font color='#00AAAA'>Team Project : Final Report</font>
+- <b>Submission   </b>: 착수보고, 결과보고, 소스코드
+- <b>Presentation </b>: 2022.06.24(금)
+- <b>Keep in mind </b>: <font color='#CC0000'><b> Learning by doing, doing by learning !! </b></font>
+
+### <font color="red">Project Team A </font>
+
+<div align=left width=100%>
+<table border=1 width=100%>
+	<tr>
+		<td width="25%"><div align="center"><b>Project Team</b></div></td>
+		<td width="75%"><div align="left" > 선릉파이터 팀 (전북은행)</div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Team Members</b></div></td>
+		<td><div align="left" > 팀장 : 박요온,  &nbsp;&nbsp;&nbsp; 팀원 : 오승현, 한혜형, 김영목, 박성실 </div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Report</b></div></td>
+		<td>
+			<div align="left" > 
+				<a href="T1_전북은행/S10_기획단계/S110_문제정의서_선릉파이터팀.pdf">[문제정의서]</a>, 
+                &nbsp;&nbsp;&nbsp; 
+				<a href="T1_전북은행/S10_기획단계/S100_착수보고서_선릉파이터팀.pdf">[착수보고서]</a>,  
+                &nbsp;&nbsp;&nbsp; 
+                [분석보고서],
+                &nbsp;&nbsp;&nbsp; 
+                [코드소스취합]
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Subject</b></div></td>
+		<td><div align="left" > Covid19 전/후 업종별 매출액 변화 분석</div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Presentation</b></div></td>
+		<td><div align="left" ><a href="reports/SBA19_S3_최종보고서_A팀.pdf"><img src="images/포스트코로나.png" width="90%"></a></div></td>
+	</tr>
+</table>
+</div>
+
+
+### <font color="yellow">Project Team B </font>
+
+<div align=left width=100%>
+<table border=1 width=100%>
+	<tr>
+		<td width="25%"><div align="center"><b>Project Team</b></div></td>
+		<td width="75%"><div align="left" > I.N.E 팀 (광주은행)</div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Team Members</b></div></td>
+		<td><div align="left" > 팀장 : 최대훈,  &nbsp;&nbsp;&nbsp; 팀원 : 김은민, 박동현, 이건호, 정은지 </div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Report</b></div></td>
+		<td>
+			<div align="left" > 
+				<a href="T2_광주은행/S10_기획단계/S110_문제정의서_I.N.E.pdf">[문제정의서]</a>, 
+                &nbsp;&nbsp;&nbsp; 
+				<a href="T2_광주은행/S10_기획단계/S100_착수보고서_I.N.E.pdf">[착수보고서]</a>,  
+                &nbsp;&nbsp;&nbsp; 
+                [분석보고서],
+                &nbsp;&nbsp;&nbsp; 
+                [코드소스취합]  
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Subject</b></div></td>
+		<td><div align="left" > 금융사기, 이대로 막을 수 없나?</div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Presentation</b></div></td>
+		<td><div align="left" ><a href="#"><img src="images/금융사기.png" width="90%"></a></div></td>
+	</tr>
+</table>
+</div>
+
+
 <marquee><font size=3 color='brown'>The BigpyCraft find the information to design valuable society with Technology & Craft.</font></marquee>
 <div align='right'><font size=2 color='gray'> &lt; The End &gt; </font></div>
