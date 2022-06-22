@@ -29,14 +29,17 @@
 - SP2. [인공지능 기술 이해       ][SP20]
 
 ### <font color='#00AAAA'>Practice Code</font>
+
 - AI 1-0. [TensorFlow Programming Model Introdue     ][ML1010]
 - AI 1-1. [TensorFlow Overview : Basics operations   ][ML1020]
 - AI 1-2. [Linear Regression                         ][ML1030]
 - AI 1-3. [Minimizing Cost                           ][ML1040]
 - AI 1-4. [Multi-Variable linear regression          ][ML1050]
 <br/><br/>
-- AI 2-1. [Logistic classifier                       ][ML2010]
+
+- AI 2-1. [Logistic Classifier                       ][ML2010]
 - AI 2-2. [Softmax Classifier                        ][ML2020]
+- AI 2-3. [Image Classification by TF2               ][ML2030]
 <br/><br/>
 
 ### <font color='#00AAAA'>Appendix</font>
@@ -74,6 +77,9 @@
 [ML6200]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/mldl/BDA-ML620-CNN_Basics.html                          "Go ML6200"
 [ML7240]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/mldl/BDA-ML724_RNN_Long_Sentence.html                   "Go ML7240"
 [ML7250]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/mldl/BDA-ML725_RNN_Stock_Prediction_ver3.html           "Go ML7250"
+
+[ML2030]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/mldl/A_BGN01_image_classification_ver3.html             "Go ML2030"
+[ML2040]:  https://htmlpreview.github.io/?https://github.com/bigpycraft/ds22-jbfg-mc/blob/master/notebook/mldl/A_BGN02_text_classification_ver3.html              "Go ML2040"
 
 
 
