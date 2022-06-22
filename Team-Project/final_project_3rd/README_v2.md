@@ -66,7 +66,7 @@
                 &nbsp;&nbsp;&nbsp; 
                 [분석보고서],
                 &nbsp;&nbsp;&nbsp; 
-                [코드소스취합]
+                [소스코드취합]
 			</div>
 		</td>
 	</tr>
@@ -104,7 +104,7 @@
                 &nbsp;&nbsp;&nbsp; 
                 [분석보고서],
                 &nbsp;&nbsp;&nbsp; 
-                [코드소스취합]  
+                [소스코드취합]  
 			</div>
 		</td>
 	</tr>
