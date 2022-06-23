@@ -44,13 +44,13 @@
 - <b>Presentation </b>: 2022.06.24(금)
 - <b>Keep in mind </b>: <font color='#CC0000'><b> Learning by doing, doing by learning !! </b></font>
 
-### <font color="red">Project Team A </font>
+### <font color="red">Project Team A - 전북은행</font>
 
 <div align=left width=100%>
 <table border=1 width=100%>
 	<tr>
 		<td width="25%"><div align="center"><b>Project Team</b></div></td>
-		<td width="75%"><div align="left" > 선릉파이터 팀 (전북은행)</div></td>
+		<td width="75%"><div align="left" > 선릉파이터 팀 </div></td>
 	</tr>
 	<tr>
 		<td><div align="center"><b>Team Members</b></div></td>
@@ -84,13 +84,13 @@
 </div>
 
 
-### <font color="yellow">Project Team B </font>
+### <font color="yellow">Project Team B - 광주은행</font>
 
 <div align=left width=100%>
 <table border=1 width=100%>
 	<tr>
 		<td width="25%"><div align="center"><b>Project Team</b></div></td>
-		<td width="75%"><div align="left" > I.N.E 팀 (광주은행)</div></td>
+		<td width="75%"><div align="left" > I.N.E 팀</div></td>
 	</tr>
 	<tr>
 		<td><div align="center"><b>Team Members</b></div></td>
