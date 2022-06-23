@@ -61,14 +61,14 @@
 		<td>
 			<div align="left" > 
 				<a href="T1_전북은행/S10_기획단계/S110_문제정의서.pdf">[문제정의서]</a>, 
-                &nbsp;&nbsp;&nbsp; 
+				&nbsp;&nbsp;&nbsp; 
 				<a href="T1_전북은행/S10_기획단계/S100_착수보고서.pdf">[착수보고서]</a>,  
-                &nbsp;&nbsp;&nbsp; 
-                <a href="T1_전북은행/S10_기획단계/S120_WBS.png">[WBS-범위/일정관리]</a>,
-                &nbsp;&nbsp;&nbsp; 
-                <a href="T1_전북은행/S20_분석단계/">[데이터분석]</a>,
-                &nbsp;&nbsp;&nbsp; 
-                <a href="T1_전북은행/S30_최종보고/S300_최종분석보고서.pdf">[결과보고서]</a>
+				&nbsp;&nbsp;&nbsp; 
+				<a href="T1_전북은행/S10_기획단계/S120_WBS.png">[WBS-범위/일정관리]</a>,
+				&nbsp;&nbsp;&nbsp; 
+				<a href="T1_전북은행/S20_분석단계/">[데이터분석]</a>,
+				&nbsp;&nbsp;&nbsp; 
+				<a href="T1_전북은행/S30_최종보고/S300_최종분석보고서.pdf">[결과보고서]</a>
 			</div>
 		</td>
 	</tr>
@@ -100,13 +100,15 @@
 		<td><div align="center"><b>Report</b></div></td>
 		<td>
 			<div align="left" > 
-				<a href="T2_광주은행/S10_기획단계/S110_문제정의서_I.N.E.pdf">[문제정의서]</a>, 
-                &nbsp;&nbsp;&nbsp; 
-				<a href="T2_광주은행/S10_기획단계/S100_착수보고서_I.N.E.pdf">[착수보고서]</a>,  
-                &nbsp;&nbsp;&nbsp; 
-                [분석보고서],
-                &nbsp;&nbsp;&nbsp; 
-                [소스코드취합]  
+				<a href="T2_광주은행/S10_기획단계/S110_문제정의서.pdf">[문제정의서]</a>, 
+				&nbsp;&nbsp;&nbsp; 
+				<a href="T2_광주은행/S10_기획단계/S100_착수보고서.pdf">[착수보고서]</a>,  
+				&nbsp;&nbsp;&nbsp; 
+				<a href="T2_광주은행/S10_기획단계/S120_WBS.png">[WBS-범위/일정관리]</a>,
+				&nbsp;&nbsp;&nbsp; 
+				<a href="T2_광주은행/S20_분석단계/">[데이터분석]</a>,
+				&nbsp;&nbsp;&nbsp; 
+				<a href="T2_광주은행/S30_최종보고/S300_최종분석보고서.pdf">[결과보고서]</a>
 			</div>
 		</td>
 	</tr>
