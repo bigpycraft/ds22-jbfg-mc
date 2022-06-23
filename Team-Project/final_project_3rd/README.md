@@ -78,7 +78,7 @@
 	</tr>
 	<tr>
 		<td><div align="center"><b>Presentation</b></div></td>
-		<td><div align="left" ><a href="T1_전북은행/S20_분석단계/"><img src="images/포스트코로나.png" width="90%"></a></div></td>
+		<td><div align="left" ><a href="T1_전북은행/S30_최종보고/S300_최종분석보고서.pdf"><img src="images/포스트코로나.png" width="90%"></a></div></td>
 	</tr>
 </table>
 </div>
@@ -118,7 +118,7 @@
 	</tr>
 	<tr>
 		<td><div align="center"><b>Presentation</b></div></td>
-		<td><div align="left" ><a href="#"><img src="images/금융사기.png" width="90%"></a></div></td>
+		<td><div align="left" ><a href="T2_광주은행/S30_최종보고/S300_최종분석보고서.pdf"><img src="images/금융사기.png" width="90%"></a></div></td>
 	</tr>
 </table>
 </div>
