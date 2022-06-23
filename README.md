@@ -34,8 +34,9 @@
 - [Data Collecting and Web Cralwling     ][Sect-F]
 - [Korean Natural Language Processing    ][Sect-G]
 <br/><br/>
-- [특강 - Database and SQL               ][Sect-H]
-- [특강 - AI & ML/DL Overview            ][Sect-M]
+- [특강1 - Database and SQL               ][Sect-H]
+- [특강2 - AI & ML/DL Overview            ][Sect-M]
+- [특강3 - Coding Era, Why Big Data?      ][Sect-Z]
 <br/><br/>
 
 <hr>
@@ -56,6 +57,7 @@
 [Sect-G]: ./Sect-G/                  "Go Sect-G"
 [Sect-H]: ./Sect-H/                  "Go Sect-H"
 [Sect-M]: ./Sect-M/                  "Go Sect-M"
+[Sect-Z]: ./Sect-Z/                  "Go Sect-Z"
 
 [Proj-1]: ./Team-Project/pilot_project_1st/   "Go Proj-1"
 [Proj-2]: ./Team-Project/pilot_project_2nd/   "Go Proj-2"
@@ -238,6 +240,31 @@
 </table>
 <br/>
 
+
+
+### Coding Era - Interview on BigData
+
+<table align="left">
+    <tr align="left">
+        <td width="200">
+            <a href="Sect-Z/코딩시대_인터뷰_빅데이터전문가.pdf">
+            <img src="./Sect-Z/코딩시대_썸네일.png" width="150" />
+            </a>
+        </td>
+        <td width="800">
+<div align="left"> 
+    <b> - 코딩시대, Coding Time </b>
+    <br/><br/> 
+    <b> - Prologue </b>: 미래 변화를 대비하기 위해 코딩역량을 키우자!!!
+    <br/><br/> 
+    <b> - INDEX </b> : <a href="Sect-Z/코딩시대_목차.pdf">[코딩시대 - 목차]</a>
+    <br/><br/> 
+    <b> - INTERVIEW </b> : <a href="Sect-Z/코딩시대_인터뷰_빅데이터전문가.pdf">데이터를 다루는 것은 4차 산업혁명에서 기본</a>
+</div>
+        </td>
+    </tr>
+</table>
+<br/>
 
 
 <marquee><font size=3 color='brown'>The BigpyCraft find the information to design valuable society with Technology & Craft.</font></marquee>
